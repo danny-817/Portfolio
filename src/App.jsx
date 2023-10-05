@@ -1,37 +1,45 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import './App.css'
-import Footer from './components/footer'
-import About from './components/about'
-import Projects from './components/projects'
-import Navbar from './components/navbar'
+import "./App.css";
+import Footer from "./components/footer";
+import About from "./components/about";
+import Projects from "./components/projects";
+import Navbar from "./components/navbar";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-    <Navbar id="navbar"/>
-    <div className='body-container'><body>
-    <div  >
-      <h1 className='' >Daniel Halsall</h1>
-    </div>
-      
-    <div className='container smooth-scroll' id="about " >
-      <About />
-    </div>
+      <Navbar id="navbar" className="mh-50" />
+      <div className="body-container">
+        <main>
+          <div>
+            <h1 className="">Daniel Halsall</h1>
+          </div>
 
-    <div className='container smooth-scroll' id="projects">
-    <Projects />
-    </div>
-<div  className='container smooth-scroll' id="footer"><Footer /></div>
-    </body></div>
-    
-    
-    
-      
+          <div className="container smooth-scroll" id="about ">
+            <br />
+            <br />
+            <About />
+          </div>
+
+          <div className="container smooth-scroll" id="projects">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Projects />
+          </div>
+          <div className="container smooth-scroll" id="footer">
+            <Footer />
+          </div>
+        </main>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
