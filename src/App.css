@@ -2,6 +2,13 @@
   border-style: solid;
   border-color: black;
 }
+/* .smooth-scroll{
+  scroll-behavior: smooth;
+} */
+html{
+  scroll-behavior: smooth;
+}
+
 
 /* #root {
   max-width: 1280px;

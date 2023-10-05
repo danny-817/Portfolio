@@ -6,6 +6,25 @@
  */
 
 /*#region fonts*/
+
+li {
+    display:inline-flex
+    
+}
+
+
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    position: fixed;
+    font-size: 2em;
+    ;
+}
+
+
 @font-face 
 {
     font-family:BlenderProBook;
@@ -78,14 +97,25 @@ html
     font-family: "BlenderProBook";
     padding: 0;
     margin: 0;
+    /* scroll-behavior: smooth; */
+    
+}
+
+.smooth-scroll{
+    scroll-behavior: smooth;
 }
 
 body
 {
+    
+    width: 100%;
     background-color: var(--yellow);
-    padding: 0;
-    margin: 0;
+    top: 10%;
+    padding-top: 00%;
+    margin-top:0%;
+    scroll-behavior: smooth;
 }
+
 
 /*#endregion*/
 
