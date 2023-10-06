@@ -11,26 +11,18 @@ function App() {
 
   return (
     <>
-      <Navbar id="navbar" className="mh-50" />
+      <Navbar id="navbar" className="w-50" />
       <div className="body-container">
         <main>
-          <div>
+          <div className="container">
             <h1 className="">Daniel Halsall</h1>
           </div>
 
           <div className="container smooth-scroll" id="about ">
-            <br />
-            <br />
             <About />
           </div>
 
           <div className="container smooth-scroll" id="projects">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             <Projects />
           </div>
           <div className="container smooth-scroll" id="footer">

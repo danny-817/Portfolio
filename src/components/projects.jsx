@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="container border">
+    <div className="container w-100 h-100">
       <h1 className="">Projects</h1>
       {/* <div className="border container row ">
         <div className=" border px-4 col">
@@ -78,12 +78,12 @@ export default function Projects() {
       <div>
         <div
           id="carouselExampleFade"
-          class="carousel slide carousel-fade "
+          className="carousel slide carousel-fade "
           data-bs-theme="dark"
         >
-          <div class="carousel-inner">
+          <div className="carousel-inner">
             <div
-              class="carousel-item active"
+              className="carousel-item active"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
@@ -92,7 +92,7 @@ export default function Projects() {
                 className="d-block w-100 opacity-25"
                 alt="..."
               ></img>
-              <div class="carousel-caption d-none d-md-block pe-none">
+              <div className="carousel-caption d-none d-md-block pe-none">
                 <h5 className="display-1 ">SnackTrack</h5>
                 <p>
                   Some representative placeholder content for the first slide.
@@ -101,63 +101,86 @@ export default function Projects() {
             </div>
 
             <div
-              class="modal fade"
+              className="modal fade"
               id="staticBackdrop"
               data-bs-backdrop="static"
               data-bs-keyboard="false"
-              tabindex="-1"
+              // tabindex="-1"
               aria-labelledby="staticBackdropLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                      Modal title
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h1
+                      className="modal-title fs-5 text-light"
+                      id="staticBackdropLabel"
+                    >
+                      SnackTrack
                     </h1>
+
                     <button
                       type="button"
-                      class="btn-close"
+                      className="btn-close"
                       data-bs-dismiss="modal"
                       aria-label="Close"
                     ></button>
                   </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
+                  <div className="modal-body">
+                    <p className="text-light px-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Neque, atque recusandae! Cumque, assumenda accusamus,
+                      delectus ratione ex ut exercitationem, architecto sequi
+                      similique nobis quos excepturi deserunt accusantium
+                      quaerat earum? Perferendis?
+                    </p>
+                  </div>
+                  <div className="modal-footer">
+                    <a href="https://snacktrack.vercel.app/" target="_blank">
+                      <button type="button" className="btn btn-info text-dark">
+                        To SnackTrack
+                      </button>
+                    </a>
+                    <a
+                      href="https://github.com/danny-817/snacktrack"
+                      target="_blank"
+                    >
+                      <button type="button" className="btn btn-info text-dark">
+                        GitHub repo
+                      </button>
+                    </a>
+
+                    {/* <button
                       type="button"
                       class="btn btn-secondary"
                       data-bs-dismiss="modal"
                     >
                       Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Understood
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src="http://via.placeholder.com/640x360"
                 className="d-block w-100 opacity-25"
                 alt="..."
               ></img>
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h5 className="display-1">NCws</h5>
                 <p>
                   Some representative placeholder content for the first slide.
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
-                src="http://via.placeholder.com/640x360"
+                src="src/assets/ncews-api.png"
                 className="d-block w-100 opacity-25"
                 alt="..."
               ></img>
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h5 className="display-1">NCews API</h5>
                 <p>
                   Some representative placeholder content for the first slide.
@@ -166,22 +189,28 @@ export default function Projects() {
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleFade"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleFade"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </div>
