@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="container w-100 h-100">
+    <div className="container w-100 h-100 border border-dark">
       <h1 className="">Projects</h1>
-      {/* <div className="border container row ">
+      <div className="border container row ">
         <div className=" border px-4 col">
           <h2>SnackTrack</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
@@ -74,22 +74,23 @@ export default function Projects() {
             GitHub:<a href="">Insert Link Here!</a>
           </p>
         </div>
-      </div> */}
-      <div>
+      </div>
+      {/* carousel start!!!!!!!!! */}
+      {/* <div className="container">
         <div
           id="carouselExampleFade"
-          className="carousel slide carousel-fade "
+          className="carousel slide carousel-slide   "
           data-bs-theme="dark"
         >
           <div className="carousel-inner">
             <div
-              className="carousel-item active"
+              className="carousel-item active  "
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
               <img
-                src="./src/assets/snacktrack.png"
-                className="d-block w-100 opacity-25"
+                src="./src/assets/snacktrack-resized.jpg"
+                className="d-block mx-auto w-100 opacity-25 image-fluid border border-dark"
                 alt="..."
               ></img>
               <div className="carousel-caption d-none d-md-block pe-none">
@@ -99,7 +100,7 @@ export default function Projects() {
                 </p>
               </div>
             </div>
-
+            
             <div
               className="modal fade"
               id="staticBackdrop"
@@ -150,21 +151,16 @@ export default function Projects() {
                       </button>
                     </a>
 
-                    {/* <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button> */}
+                    
                   </div>
                 </div>
               </div>
             </div>
             <div className="carousel-item">
               <img
-                src="http://via.placeholder.com/640x360"
-                className="d-block w-100 opacity-25"
+                
+                src="./src/assets/snacktrack-resized.jpg"
+                className="d-block mx-auto w-100 opacity-25 image-fluid border border-dark"
                 alt="..."
               ></img>
               <div className="carousel-caption d-none d-md-block">
@@ -174,10 +170,10 @@ export default function Projects() {
                 </p>
               </div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item ">
               <img
-                src="src/assets/ncews-api.png"
-                className="d-block w-100 opacity-25"
+                src="src/assets/ncnews-api-resized.jpg"
+                className="d-block w-100 opacity-25 image-fluid border border-dark"
                 alt="..."
               ></img>
               <div className="carousel-caption d-none d-md-block">
@@ -213,7 +209,7 @@ export default function Projects() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
