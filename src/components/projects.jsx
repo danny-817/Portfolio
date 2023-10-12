@@ -4,12 +4,15 @@ export default function Projects() {
   return (
     <div className="container w-100 h-100 border border-dark">
       <h1 className="">Projects</h1>
-      <div className="border container row ">
-        <div className=" border px-4 col">
+      <div className="container border container  ">
+        <div className=" container border   text-center">
           <h2>SnackTrack</h2>
-          <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
+          <Link
+            to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners"
+            className=""
+          >
             <img
-              className="thumbnail align-self-center justify-content-center"
+              className="thumbnail "
               src="http://via.placeholder.com/640x360
 "
               alt="placeholder"
@@ -17,18 +20,12 @@ export default function Projects() {
           </Link>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
-            cumque esse vero officiis eum eius ab itaque assumenda iste
-            voluptatum cupiditate dolorum cum sunt vitae, nemo, reiciendis quas
-            fugiat?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolor sit cumque esse vero officiis eum eius ab itaque assumenda
-            iste voluptatum cupiditate dolorum cum sunt vitae, nemo, reiciendis
-            quas fugiat?
           </p>
           <p>
             GitHub:<a href="">Insert Link Here!</a>
           </p>
         </div>
-        <div className="border px-4 col">
+        <div className="border px-4  text-center">
           <h2>NC News</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <img
@@ -40,18 +37,12 @@ export default function Projects() {
           </Link>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
-            cumque esse vero officiis eum eius ab itaque assumenda iste
-            voluptatum cupiditate dolorum cum sunt vitae, nemo, reiciendis quas
-            fugiat?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolor sit cumque esse vero officiis eum eius ab itaque assumenda
-            iste voluptatum cupiditate dolorum cum sunt vitae, nemo, reiciendis
-            quas fugiat?
           </p>
           <p>
             GitHub:<a href="">Insert Link Here!</a>
           </p>
         </div>
-        <div className="border px-4 col">
+        <div className="border px-4  text-center">
           <h2>NC News API</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <img
@@ -63,12 +54,6 @@ export default function Projects() {
           </Link>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
-            cumque esse vero officiis eum eius ab itaque assumenda iste
-            voluptatum cupiditate dolorum cum sunt vitae, nemo, reiciendis quas
-            fugiat?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dolor sit cumque esse vero officiis eum eius ab itaque assumenda
-            iste voluptatum cupiditate dolorum cum sunt vitae, nemo, reiciendis
-            quas fugiat?
           </p>
           <p>
             GitHub:<a href="">Insert Link Here!</a>

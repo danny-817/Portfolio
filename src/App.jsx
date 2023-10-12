@@ -10,18 +10,18 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Navbar id="navbar" className="w-50" />
+    <div className="">
       <div className="body-container">
         <main>
-          <div className="container">
+          {/* <div className="container">
             <h1 className="">Daniel Halsall</h1>
-          </div>
+          </div> */}
 
           <div className="container smooth-scroll" id="about ">
             <About />
           </div>
 
+          <Navbar id="navbar" className="w-50" />
           <div className="container smooth-scroll" id="projects">
             <Projects />
           </div>
@@ -30,7 +30,7 @@ function App() {
           </div>
         </main>
       </div>
-    </>
+    </div>
   );
 }
 
