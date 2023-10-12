@@ -14,5 +14,78 @@
 }
 
 .landing-page {
-  background-color: rgb(37, 53, 68);
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 109, 109) 0%,
+
+    rgb(37, 37, 37) 15% 85%,
+    rgb(0, 109, 109) 100%
+  );
+
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+.landing-page > p {
+  box-sizing: border-box;
+  max-width: 1300px;
+  /* height: 100vh; */
+  /* padding-top: 40%;
+  padding-left: 10%;
+  padding-right: 10%; */
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  width: 60%;
+  text-shadow: 0 0px 0px rgb(255, 0, 242);
+  padding: 10px;
+}
+
+.fade-to-black {
+  width: vh;
+  height: 20vh;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 00%,
+    rgb(0, 0, 0) 50%,
+    rgb(255, 255, 255) 100%
+  );
+  opacity: 0.5;
+}
+.full-page {
+  min-width: 100vh;
+  min-height: 100vh;
+}
+/* .scroll-snap-parent {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+} */
+.scroll-snap-child {
+  scroll-snap-align: start;
+}
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(1, 1);
+  }
+  /* 25% {
+    transform: scale(2, 0.1);
+  } */
+  50% {
+    transform: scale(1, 0.025);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .project-enter {
+    animation-name: wipe-enter;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
 }

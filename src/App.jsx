@@ -11,21 +11,18 @@ function App() {
 
   return (
     <div className="">
-      <div className="body-container">
-        <main>
-          {/* <div className="container">
-            <h1 className="">Daniel Halsall</h1>
-          </div> */}
-
-          <div className="container smooth-scroll" id="about ">
+      <div className="">
+        <main className="scroll-snap-parent">
+          <div className="scroll-snap-child" id="about" dir="ltr">
             <About />
           </div>
+          {/* <div className="fade-to-black full-page"></div> */}
 
           <Navbar id="navbar" className="w-50" />
-          <div className="container smooth-scroll" id="projects">
+          <div className="full-page scroll-snap-child" id="projects">
             <Projects />
           </div>
-          <div className="container smooth-scroll" id="footer">
+          <div className="" id="footer">
             <Footer />
           </div>
         </main>

@@ -5,7 +5,7 @@ export default function Projects() {
     <div className="container w-100 h-100 border border-dark">
       <h1 className="">Projects</h1>
       <div className="container border container  ">
-        <div className=" container border   text-center">
+        <div className=" project-enter">
           <h2>SnackTrack</h2>
           <Link
             to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners"
