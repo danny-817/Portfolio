@@ -2,6 +2,24 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: BlenderProBook;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../styles/fonts/BlenderProBook.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Oxanium;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../styles/fonts/Oxanium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Cyberpunk;
+  src: url(../../styles/fonts/Cyberpunk.otf) format("opentype");
+}
 
 .teal-yellow-teal {
   background: local;
@@ -16,6 +34,7 @@
 .landing-page {
   background-image: linear-gradient(
     to right,
+
     rgb(0, 109, 109) 0%,
 
     rgb(37, 37, 37) 15% 85%,
@@ -24,10 +43,42 @@
 
   height: 100vh;
   color: rgb(255, 255, 255);
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Oxanium", Courier, monospace;
   align-content: center;
   justify-content: center;
-  display: flex;
+
+  /* display: flex; */
+}
+.firstname-container {
+  /* border: solid white; */
+  box-sizing: border-box;
+  display: block;
+  /* width: 70%; */
+  height: 15%;
+  cursor: default;
+  user-select: none;
+  max-width: 1300px;
+  margin: 0 auto 0;
+}
+.firstname {
+  box-sizing: border-box;
+  font-size: 10rem;
+  font-family: "Oxanium";
+}
+.surname-container {
+  /* border: solid yellow; */
+  /* width: 70%; */
+  height: 15%;
+  position: relative;
+  cursor: default;
+  user-select: none;
+  max-width: 1300px;
+}
+.surname {
+  box-sizing: border-box;
+  font-size: 10rem;
+  float: right;
+  font-family: "Oxanium";
 }
 .landing-page > p {
   box-sizing: border-box;
@@ -38,9 +89,22 @@
   padding-right: 10%; */
   text-align: center;
   font-size: 2em;
-  margin: auto;
+  margin: 10% auto;
   width: 60%;
-  text-shadow: 0 0px 0px rgb(255, 0, 242);
+  /* text-shadow: 0 0px 10px rgb(255, 0, 242); */
+}
+.neon-glow {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
+    0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242),
+    0 0 151px rgb(255, 0, 242);
+  padding: 10px;
+}
+.neon-glow-blue {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(0, 234, 255), 0 0 82px rgb(0, 234, 255),
+    0 0 92px rgb(0, 234, 255), 0 0 102px rgb(0, 234, 255),
+    0 0 151px rgb(0, 234, 255);
   padding: 10px;
 }
 
@@ -88,4 +152,87 @@ html {
     animation-duration: 2s;
     animation-iteration-count: 1;
   }
+}
+.cyber-glitch-2 {
+  animation: cyber-glitch-2 4s linear infinite;
+}
+
+@keyframes cyber-glitch-2 {
+  0% {
+    clip-path: var(--og-clip-path);
+    transform: translateX(0);
+    text-shadow: none;
+  }
+  2% {
+    clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
+    transform: translateX(0);
+    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+  }
+  4% {
+    clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
+    transform: translateX(-1rem);
+    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+  }
+  6% {
+    clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
+    transform: translateX(1rem);
+    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+  }
+  8% {
+    clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
+    transform: translateX(0);
+    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+  }
+  12% {
+    clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%);
+    transform: translateX(0);
+    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+  }
+  14% {
+    clip-path: var(--og-clip-path);
+    transform: translateX(0);
+    text-shadow: none;
+  }
+  100% {
+    clip-path: var(--og-clip-path);
+    transform: translateX(0);
+    text-shadow: none;
+  }
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

@@ -7,22 +7,24 @@ export default function Projects() {
       <div className="container border container  ">
         <div className=" project-enter">
           <h2>SnackTrack</h2>
+
           <Link
             to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners"
             className=""
           >
             <img
               className="thumbnail "
-              src="http://via.placeholder.com/640x360
+              src="src/assets/snacktrack.png
 "
               alt="placeholder"
             />
           </Link>
+
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
-          </p>
-          <p>
-            GitHub:<a href="">Insert Link Here!</a>
+            GitHub:
+            <a href="https://github.com/danny-817/snacktrack">
+              Insert Link Here!
+            </a>
           </p>
         </div>
         <div className="border px-4  text-center">
