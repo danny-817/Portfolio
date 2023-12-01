@@ -21,6 +21,17 @@
   src: url(../../styles/fonts/Cyberpunk.otf) format("opentype");
 }
 
+body {
+  background-image: linear-gradient(
+    to right,
+
+    rgb(0, 109, 109) 0%,
+
+    rgb(37, 37, 37) 15% 85%,
+    rgb(0, 109, 109) 100%
+  );
+}
+
 .teal-yellow-teal {
   background: local;
   background-image: linear-gradient(
@@ -42,7 +53,7 @@
   );
 
   height: 100vh;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
   font-family: "Oxanium", Courier, monospace;
   align-content: center;
   justify-content: center;
@@ -80,6 +91,11 @@
   float: right;
   font-family: "Oxanium";
 }
+.title {
+  font-family: "Oxanium";
+  font-size: 5rem;
+  text-align: center;
+}
 .landing-page > p {
   box-sizing: border-box;
   max-width: 1300px;
@@ -93,7 +109,7 @@
   width: 60%;
   /* text-shadow: 0 0px 10px rgb(255, 0, 242); */
 }
-.neon-glow {
+.neon-glow-pink {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
     0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242),

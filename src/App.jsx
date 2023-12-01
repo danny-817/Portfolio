@@ -12,14 +12,14 @@ function App() {
   return (
     <div className="">
       <div className="">
-        <main className="scroll-snap-parent">
-          <div className="scroll-snap-child" id="about" dir="ltr">
+        <main className="">
+          <div className="" id="about" dir="ltr">
             <About />
           </div>
           {/* <div className="fade-to-black full-page"></div> */}
 
           <Navbar id="navbar" className="w-50" />
-          <div className="full-page scroll-snap-child" id="projects">
+          <div className="" id="projects">
             <Projects />
           </div>
           <div className="" id="footer">

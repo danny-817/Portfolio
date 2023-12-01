@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function Projects() {
   return (
     <div className="container w-100 h-100 border border-dark">
-      <h1 className="">Projects</h1>
-      <div className="container border container  ">
+      <h1 className="title neon-glow-pink">Projects</h1>
+      <div className="container border ">
         <div className=" project-enter">
           <h2>SnackTrack</h2>
 
