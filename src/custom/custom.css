@@ -64,11 +64,12 @@ body {
 
   /* display: flex; */
 }
+.projects-page {
+  min-height: 100vh;
+}
 .firstname-container {
-  /* border: solid white; */
   box-sizing: border-box;
   display: block;
-  /* width: 70%; */
   height: 15%;
   cursor: default;
   user-select: none;
@@ -81,8 +82,6 @@ body {
   font-family: "Oxanium";
 }
 .surname-container {
-  /* border: solid yellow; */
-  /* width: 70%; */
   height: 15%;
   position: relative;
   cursor: default;
@@ -98,24 +97,40 @@ body {
 }
 .title {
   font-family: "Oxanium";
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
 }
 .landing-page > p {
   box-sizing: border-box;
   max-width: 1300px;
-  /* height: 100vh; */
-  /* padding-top: 40%;
-  padding-left: 10%;
-  padding-right: 10%; */
+
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   margin: 10% auto;
   width: 60%;
-  /* text-shadow: 0 0px 10px rgb(255, 0, 242); */
 }
+.projects-container {
+  align-content: center;
+  max-width: 1300px;
+  margin: 0 auto 0;
+}
+.project {
+  color: #ffffff;
+  display: flex;
+  max-width: 1300px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+/* .project > * {
+  border: greenyellow;
+  border-style: solid;
+  margin: 0 auto;
+} */
 .neon-glow-pink {
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+  text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
     0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242),
     0 0 151px rgb(255, 0, 242);

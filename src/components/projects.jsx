@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="container w-100 h-100 border border-dark">
+    <div className="projects-page">
       <h1 className="title neon-glow-pink">Projects</h1>
-      <div className="container border ">
-        <div className=" project-enter">
+      <div className="projects-container highlight">
+        <div className="project ">
           <h2>SnackTrack</h2>
 
           <Link
@@ -27,7 +27,7 @@ export default function Projects() {
             </a>
           </p>
         </div>
-        <div className="border px-4  text-center">
+        <div className="project">
           <h2>NC News</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <img
@@ -44,7 +44,7 @@ export default function Projects() {
             GitHub:<a href="">Insert Link Here!</a>
           </p>
         </div>
-        <div className="border px-4  text-center">
+        <div className="project">
           <h2>NC News API</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <img
