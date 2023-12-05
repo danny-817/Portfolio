@@ -18,7 +18,7 @@ function App() {
           </div>
           {/* <div className="fade-to-black full-page"></div> */}
 
-          <Navbar id="navbar" className="w-50" />
+          {/* <Navbar id="navbar" className="w-50" /> */}
           <div className="" id="projects">
             <Projects />
           </div>

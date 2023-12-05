@@ -57,63 +57,63 @@ body {
   );
 
   height: 100vh;
-  /* color: rgb(255, 255, 255); */
+  width: 100vw;
+
   font-family: "Oxanium", Courier, monospace;
   align-content: center;
   justify-content: center;
-
-  /* display: flex; */
 }
-.projects-page {
+/* .projects-page {
   min-height: 100vh;
-}
+} */
 .firstname-container {
   box-sizing: border-box;
   display: block;
-  height: 15%;
+
   cursor: default;
   user-select: none;
-  max-width: 1300px;
-  margin: 0 auto 0;
+  height: 10vh;
 }
 .firstname {
   box-sizing: border-box;
-  font-size: 10rem;
+  font-size: 15vh;
   font-family: "Oxanium";
+  float: right;
+  margin: 0 50% 0 0;
 }
 .surname-container {
-  height: 15%;
+  height: 15vh;
   position: relative;
   cursor: default;
   user-select: none;
-  max-width: 1300px;
-  margin: 0 auto 0;
+  width: 50%;
+  margin: 0 0 0 50%;
 }
 .surname {
   box-sizing: border-box;
-  font-size: 10rem;
-  float: right;
+  font-size: 15vh;
+  float: left;
   font-family: "Oxanium";
 }
 .title {
   font-family: "Oxanium";
-  font-size: 6rem;
+  font-size: 10vw;
   text-align: center;
 }
 .landing-page > p {
   box-sizing: border-box;
   max-width: 1300px;
-
+  user-select: none;
   text-align: center;
-  font-size: 3em;
-  margin: 10% auto;
+  font-size: 4vw;
+  margin: 30vh auto;
   width: 60%;
 }
-.projects-container {
+/* .projects-container {
   align-content: center;
-  max-width: 1300px;
+
   margin: 0 auto 0;
-}
+} */
 .project {
   color: #ffffff;
   display: flex;

@@ -91,7 +91,7 @@ html {
   scroll-behavior: smooth;
 }
 .thumbnail {
-  max-height: 15em;
+  max-width: 70vw;
 }
 
 /* #root {
