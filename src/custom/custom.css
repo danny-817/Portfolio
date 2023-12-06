@@ -46,7 +46,7 @@ body {
   border-style: solid;
 }
 
-.landing-page {
+/* .landing-page {
   background-image: linear-gradient(
     to right,
 
@@ -63,26 +63,30 @@ body {
   align-content: center;
   justify-content: center;
 }
-/* .projects-page {
+.projects-page {
   min-height: 100vh;
-} */
+}
 .firstname-container {
   box-sizing: border-box;
   display: block;
-
+  max-width: 1300px;
+  position: relative;
   cursor: default;
   user-select: none;
-  height: 10vh;
+  height: fit-content;
 }
 .firstname {
   box-sizing: border-box;
-  font-size: 15vh;
+  font-size: 15vw;
   font-family: "Oxanium";
   float: right;
   margin: 0 50% 0 0;
 }
 .surname-container {
-  height: 15vh;
+  max-width: 1300px;
+  display: block;
+
+  height: fit-content;
   position: relative;
   cursor: default;
   user-select: none;
@@ -91,10 +95,68 @@ body {
 }
 .surname {
   box-sizing: border-box;
-  font-size: 15vh;
+  font-size: 15vw;
   float: left;
   font-family: "Oxanium";
+} */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 109, 109) 0%,
+    rgb(37, 37, 37) 15% 85%,
+    rgb(0, 109, 109) 100%
+  );
+  height: 100vh;
+  width: 100vw;
+  font-family: "Oxanium", Courier, monospace;
+  background-size: 100% 100%; /* Ensure the gradient covers the entire viewport */
 }
+
+.firstname-container {
+  box-sizing: border-box;
+  /* max-width: 650px; */
+  position: relative;
+  cursor: default;
+  user-select: none;
+  text-align: right;
+  margin: 0 50vw 0 0;
+}
+.surname-container {
+  box-sizing: border-box;
+  /* max-width: 650px; */
+  position: relative;
+  cursor: default;
+  user-select: none;
+  text-align: left;
+  margin: 0 0 0 50vw;
+}
+
+.firstname,
+.surname {
+  box-sizing: border-box;
+  font-size: 15vh;
+  font-family: "Oxanium";
+}
+
+.firstname {
+  margin-right: auto;
+}
+
+.surname {
+  margin-left: auto;
+}
+@media (max-width: 1100px) {
+  .firstname-container,
+  .surname-container {
+    text-align: center;
+    margin: 0; /* Remove margins on narrow screens */
+  }
+}
+
 .title {
   font-family: "Oxanium";
   font-size: 10vw;
@@ -102,7 +164,7 @@ body {
 }
 .landing-page > p {
   box-sizing: border-box;
-  max-width: 1300px;
+  max-width: 1000px;
   user-select: none;
   text-align: center;
   font-size: 4vw;
@@ -113,7 +175,7 @@ body {
   align-content: center;
 
   margin: 0 auto 0;
-} */
+}
 .project {
   color: #ffffff;
   display: flex;
