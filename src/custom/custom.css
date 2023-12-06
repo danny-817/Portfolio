@@ -188,6 +188,11 @@ body {
   margin: auto;
   width: 60%;
 }
+@media (min-width: 1100px) {
+  .landing-page > p {
+    font-size: 3em;
+  }
+}
 .projects-container {
   align-content: center;
   height: 100vh;
