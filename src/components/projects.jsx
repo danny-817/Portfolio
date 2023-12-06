@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="projects-page">
+    <div className="projects-page ">
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
         <div className="project ">

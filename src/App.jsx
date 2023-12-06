@@ -19,10 +19,10 @@ function App() {
           {/* <div className="fade-to-black full-page"></div> */}
 
           {/* <Navbar id="navbar" className="w-50" /> */}
-          <div className="" id="projects">
+          <div className="lines" id="projects">
             <Projects />
           </div>
-          <div className="" id="footer">
+          <div className="lines" id="footer">
             <Footer />
           </div>
         </main>

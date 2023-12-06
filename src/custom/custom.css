@@ -115,6 +115,23 @@ body {
   font-family: "Oxanium", Courier, monospace;
   background-size: 100% 100%; /* Ensure the gradient covers the entire viewport */
 }
+.lines {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0, 109, 109, 0.1) 5%,
+    transparent 5%,
+    transparent 45%,
+    rgb(0, 109, 109, 0.1) 45%,
+    rgb(0, 109, 109, 0.1) 55%,
+    transparent 55%,
+    transparent 95%,
+    rgb(0, 109, 109, 0.1) 95%
+  );
+
+  background-size: 100% 30px;
+}
 
 .firstname-container {
   box-sizing: border-box;
@@ -168,12 +185,12 @@ body {
   user-select: none;
   text-align: center;
   font-size: 4vw;
-  margin: 30vh auto;
+  margin: auto;
   width: 60%;
 }
-/* .projects-container {
+.projects-container {
   align-content: center;
-
+  height: 100vh;
   margin: 0 auto 0;
 }
 .project {
@@ -186,11 +203,11 @@ body {
   text-align: center;
   margin: 20px;
 }
-/* .project > * {
+.project > * {
   border: greenyellow;
   border-style: solid;
   margin: 0 auto;
-} */
+}
 .neon-glow-pink {
   text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
