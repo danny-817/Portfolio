@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="highlight">
+    <div className="">
       <h2>Footer</h2>
       <a
         href="https://www.flaticon.com/free-icons/files-and-folders"

@@ -6,10 +6,7 @@ export default function Projects() {
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
         <div className="project ">
-          <Link
-            to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners"
-            className=""
-          >
+          <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <h2 className="project-title neon-glow-blue">SnackTrack</h2>
 
             <img
@@ -18,7 +15,6 @@ export default function Projects() {
 "
               alt="placeholder"
             />
-            <div className="box-shadow"></div>
           </Link>
 
           <p>
@@ -29,35 +25,31 @@ export default function Projects() {
           </p>
         </div>
         <div className="project">
-          <h2 className="project-title neon-glow-blue">NC News</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
+            <h2 className="project-title neon-glow-blue">NC News</h2>
             <img
-              className="thumbnail align-self-center justify-content-center"
+              className="thumbnail box-shadow"
               src="http://via.placeholder.com/640x360
 "
               alt="placeholder"
             />
           </Link>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
-          </p>
+
           <p>
             GitHub:<a href="">Insert Link Here!</a>
           </p>
         </div>
         <div className="project">
-          <h2 className="project-title neon-glow-blue">NC News API</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
+            <h2 className="project-title neon-glow-blue">NC News API</h2>
             <img
-              className="thumbnail align-self-center justify-content-center"
+              className="thumbnail box-shadow"
               src="http://via.placeholder.com/640x360
 "
               alt="placeholder"
             />
           </Link>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sit
-          </p>
+
           <p>
             GitHub:<a href="">Insert Link Here!</a>
           </p>
