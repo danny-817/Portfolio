@@ -192,27 +192,39 @@ body {
   .landing-page > p {
     font-size: 3em;
   }
+  .title {
+    font-size: 5em;
+  }
 }
 .projects-container {
   align-content: center;
-  height: 100vh;
+  height: auto;
   margin: 0 auto 0;
+  display: block;
+}
+.projects {
+  height: auto;
 }
 .project {
   color: #ffffff;
-  display: flex;
+  /* display: flex; */
   max-width: 1300px;
   display: block;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin: 30px auto;
 }
 .project > * {
-  border: greenyellow;
+  /* border: greenyellow; */
   border-style: solid;
   margin: 0 auto;
 }
+.thumbnail {
+  width: 50%;
+  max-width: 640px;
+}
+
 .neon-glow-pink {
   text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),

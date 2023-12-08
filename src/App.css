@@ -90,9 +90,10 @@ video {
 html {
   scroll-behavior: smooth;
 }
-.thumbnail {
-  max-width: 70vw;
-}
+/* .thumbnail {
+  width: 50%;
+  max-width: 640px;
+} */
 
 /* #root {
   max-width: 1280px;
