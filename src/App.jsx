@@ -19,7 +19,7 @@ function App() {
           {/* <div className="fade-to-black full-page"></div> */}
 
           {/* <Navbar id="navbar" className="w-50" /> */}
-          <div className="projects lines highlight" id="projects">
+          <div className="projects-page lines " id="projects">
             <Projects />
           </div>
           <div className="lines" id="footer">

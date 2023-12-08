@@ -2,22 +2,23 @@ import { Link } from "react-router-dom";
 
 export default function Projects() {
   return (
-    <div className="projects-page ">
+    <div className=" ">
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
         <div className="project ">
-          <h2>SnackTrack</h2>
-
           <Link
             to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners"
             className=""
           >
+            <h2 className="project-title neon-glow-blue">SnackTrack</h2>
+
             <img
-              className="thumbnail "
+              className="thumbnail box-shadow"
               src="src/assets/snacktrack.png
 "
               alt="placeholder"
             />
+            <div className="box-shadow"></div>
           </Link>
 
           <p>
@@ -28,7 +29,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="project">
-          <h2>NC News</h2>
+          <h2 className="project-title neon-glow-blue">NC News</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <img
               className="thumbnail align-self-center justify-content-center"
@@ -45,7 +46,7 @@ export default function Projects() {
           </p>
         </div>
         <div className="project">
-          <h2>NC News API</h2>
+          <h2 className="project-title neon-glow-blue">NC News API</h2>
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <img
               className="thumbnail align-self-center justify-content-center"
