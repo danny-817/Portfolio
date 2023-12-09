@@ -41,6 +41,20 @@ body {
     teal 90%
   );
 }
+.neon-glow-pink {
+  text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
+    0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242),
+    0 0 151px rgb(255, 0, 242);
+  padding: 10px;
+}
+.neon-glow-blue {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
+    0 0 42px rgb(0, 234, 255), 0 0 82px rgb(0, 234, 255),
+    0 0 92px rgb(0, 234, 255), 0 0 102px rgb(0, 234, 255),
+    0 0 151px rgb(0, 234, 255);
+  /* padding: 10px; */
+}
 .highlight {
   border: greenyellow;
   border-style: solid;
@@ -261,47 +275,49 @@ body {
   z-index: 1;
 }
 
-.neon-glow-pink {
-  text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
-    0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242),
-    0 0 151px rgb(255, 0, 242);
-  padding: 10px;
-}
-.neon-glow-blue {
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(0, 234, 255), 0 0 82px rgb(0, 234, 255),
-    0 0 92px rgb(0, 234, 255), 0 0 102px rgb(0, 234, 255),
-    0 0 151px rgb(0, 234, 255);
-  padding: 10px;
-}
-
-.fade-to-black {
-  width: vh;
-  height: 20vh;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 00%,
-    rgb(0, 0, 0) 50%,
-    rgb(255, 255, 255) 100%
-  );
-  opacity: 0.5;
-}
 .full-page {
   min-width: 100vh;
   min-height: 100vh;
+}
+.footer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 50%;
+}
+.button {
+  text-align: center;
+  /* text-decoration: none; */
+  display: inline-block;
+  border: none;
+  width: 30%;
+  height: 2em;
+
+  /* border: 4px rgb(255, 0, 0) solid; */
+  padding: 1em;
+  font-size: 1em;
+  font-weight: 1000;
+  font-family: Oxanium;
+  color: #000000;
+  background-color: teal;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 50%);
+  transition: background-color 0.5s;
+}
+.button:hover {
+  background-color: #00e7ef;
 }
 /* .scroll-snap-parent {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 } */
-.scroll-snap-child {
+/* .scroll-snap-child {
   scroll-snap-align: start;
-}
-html {
+} */
+/* html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-}
+} */
 
 @keyframes wipe-enter {
   0% {

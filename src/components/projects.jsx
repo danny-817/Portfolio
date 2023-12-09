@@ -26,14 +26,15 @@ export default function Projects() {
         </div>
         <div className="project">
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
-            <h2 className="project-title neon-glow-blue">NC News</h2>
+            <h2 className="project-title neon-glow-blue ">NC News</h2>
             <img
-              className="thumbnail box-shadow"
+              className="thumbnail box-shadow "
               src="http://via.placeholder.com/640x360
 "
               alt="placeholder"
             />
           </Link>
+          <div className="modal"></div>
 
           <p>
             GitHub:<a href="">Insert Link Here!</a>

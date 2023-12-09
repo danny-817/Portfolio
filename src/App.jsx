@@ -13,6 +13,9 @@ function App() {
     <div className="">
       <div className="">
         <main className="">
+          <div className="" id="footer">
+            <Footer />
+          </div>
           <div className="" id="about" dir="ltr">
             <About />
           </div>
@@ -21,9 +24,6 @@ function App() {
           {/* <Navbar id="navbar" className="w-50" /> */}
           <div className="projects-page lines " id="projects">
             <Projects />
-          </div>
-          <div className="lines" id="footer">
-            <Footer />
           </div>
         </main>
       </div>
