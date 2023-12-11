@@ -8,15 +8,15 @@ export default function Footer() {
       >
         Files and folders icons created by Payungkead - Flaticon
       </a> */}
-      <div className="button ">
+      <div className="button " tabindex="0">
         {/* <button className="button">Test</button> */}
-        <p className="neon-glow-blue">Top</p>
+        <p className="neon-glow-blue button-text">Top</p>
       </div>
-      <div className="button">
-        <p className="neon-glow-blue">Projects</p>
+      <div className="button" tabindex="0">
+        <p className="neon-glow-blue button-text">Projects</p>
       </div>
-      <div className="button">
-        <p className="neon-glow-blue">CV</p>
+      <div className="button" tabindex="0">
+        <p className="neon-glow-blue button-text">CV</p>
       </div>
     </div>
   );
