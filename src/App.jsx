@@ -13,9 +13,12 @@ function App() {
     <div className="">
       <div className="">
         <main className="">
-          <div className="" id="footer">
-            <Footer />
+          <div className="" id="navbar">
+            <Navbar />
           </div>
+          {/* <div className="" id="footer">
+            <Footer />
+          </div> */}
           <div className="" id="about" dir="ltr">
             <About />
           </div>
