@@ -10,13 +10,13 @@ export default function Navbar() {
       </a> */}
       <div className="button " tabindex="0">
         {/* <button className="button">Test</button> */}
-        <p className="neon-glow-blue button-text">Top</p>
+        <p className="neon-glow-blue button-text ">Top</p>
       </div>
       <div className="button" tabindex="0">
-        <p className="neon-glow-blue button-text">Projects</p>
+        <p className="neon-glow-blue button-text ">Projects</p>
       </div>
       <div className="button" tabindex="0">
-        <p className="neon-glow-blue button-text">CV</p>
+        <p className="neon-glow-blue button-text ">CV</p>
       </div>
     </div>
   );

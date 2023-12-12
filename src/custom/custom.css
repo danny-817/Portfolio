@@ -129,6 +129,7 @@ body {
   font-family: "Oxanium", Courier, monospace;
   background-size: 100% 100%; /* Ensure the gradient covers the entire viewport */
 }
+
 .lines {
   margin: 0;
   padding: 0;
@@ -209,6 +210,7 @@ body {
 .projects-container {
   align-content: center;
   height: auto;
+  padding-bottom: 5em;
   margin: 0 auto 0;
   display: block;
 }
@@ -279,11 +281,11 @@ body {
 .button {
   box-sizing: border-box;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   display: flex;
   width: 100%;
-  height: 3em;
-  padding: 1.5em;
+  height: 2em;
+  /* padding: 1.5em; */
   margin: 0.2em 0;
   font-size: 2em;
   font-weight: 1000;
@@ -302,7 +304,7 @@ body {
   background-color: rgb(0, 0, 0);
 }
 .button-text {
-  margin-left: 2em;
+  margin: 2em;
 }
 @media (min-width: 1100px) {
   .landing-page > p {
@@ -311,6 +313,9 @@ body {
   .title {
     font-size: 5em;
   }
+}
+#navbar {
+  width: 100%;
 }
 @media (max-width: 1210px) {
   .firstname-container,
@@ -323,14 +328,17 @@ body {
     position: fixed;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     z-index: 1;
-    width: 20%;
-    max-width: 20em;
+    width: 100%;
+    max-width: 100%;
     bottom: 0;
     left: 0;
   }
   .button {
     clip-path: polygon(0 0, 80% 0, 100% 50%, 100% 100%, 0 100%);
+    padding: 0;
+    margin: 0 5px 0;
   }
 }
 /* .scroll-snap-parent {
@@ -371,42 +379,42 @@ body {
   0% {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
-    text-shadow: none;
+    /* text-shadow: none; */
   }
   2% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(0);
-    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   4% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(-1rem);
-    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   6% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(1rem);
-    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   8% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(0);
-    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   12% {
     clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%);
     transform: translateX(0);
-    text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;
+    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   14% {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
-    text-shadow: none;
+    /* text-shadow: none; */
   }
   100% {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
-    text-shadow: none;
+    /* text-shadow: none; */
   }
 }
 /* The Modal (background) */
