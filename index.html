@@ -17,5 +17,42 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // Function to check if an element is in the viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      // Function to handle the visibility of thumbnails
+      function handleVisibility() {
+        let thumbnails = document.querySelectorAll(".thumbnail");
+
+        thumbnails.forEach(function (thumbnail) {
+          if (isElementInViewport(thumbnail)) {
+            thumbnail.style.display = "block"; // Show thumbnail if in view
+          }
+        });
+      }
+
+      // Use Intersection Observer to trigger handleVisibility when thumbnails are in view
+      let observer = new IntersectionObserver(handleVisibility, {
+        threshold: 0.5,
+      });
+
+      document.querySelectorAll(".thumbnail").forEach(function (thumbnail) {
+        observer.observe(thumbnail);
+      });
+
+      // Attach handleVisibility to the scroll event to handle initial visibility
+      window.addEventListener("scroll", handleVisibility);
+    </script>
   </body>
 </html>

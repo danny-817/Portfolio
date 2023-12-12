@@ -242,11 +242,29 @@ body {
 .thumbnail {
   width: 100%;
   max-width: 640px;
-  opacity: 0;
-  /* box-shadow: rgb(0, 109, 109) 100px 100px; */
+
+  /* opacity: 0;
   transition: opacity 0.3s ease;
 
-  filter: brightness(70%) grayscale(0%) hue-rotate(0deg);
+  filter: brightness(70%) grayscale(0%) hue-rotate(0deg); */
+}
+/* .animation {
+  view-timeline: --subjectReveal block;
+  animation-timeline: --subjectReveal;
+
+  animation-name: appear;
+  animation-fill-mode: both;
+  animation-duration: 1ms; 
+} */
+
+@keyframes appear {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
 }
 
 .box-shadow {

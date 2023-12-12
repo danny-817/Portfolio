@@ -1,16 +1,51 @@
+import React, { useEffect, useRef, useState } from "react";
+
 import { Link } from "react-router-dom";
 
 export default function Projects() {
+  const [visibleThumbnails, setVisibleThumbnails] = useState([]);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setVisibleThumbnails((prevVisible) => [...prevVisible, entry.target]);
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5, // Adjust this threshold as needed
+  });
+
+  const thumbnailRefs = useRef([]);
+
+  useEffect(() => {
+    thumbnailRefs.current.forEach((thumbnailRef) => {
+      observer.observe(thumbnailRef);
+    });
+
+    return () => {
+      thumbnailRefs.current.forEach((thumbnailRef) => {
+        observer.unobserve(thumbnailRef);
+      });
+    };
+  }, [thumbnailRefs, observer]);
   return (
     <div className=" ">
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
-        <div className="project ">
+        <div className="project">
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <h2 className="project-title neon-glow-blue">SnackTrack</h2>
 
             <img
-              className="thumbnail box-shadow"
+              className={`thumbnail box-shadow  ${
+                visibleThumbnails.includes(thumbnailRefs.current[0])
+                  ? "visible"
+                  : ""
+              }`}
               src="src/assets/snacktrack.png
 "
               alt="placeholder"
@@ -28,7 +63,7 @@ export default function Projects() {
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <h2 className="project-title neon-glow-blue ">NC News</h2>
             <img
-              className="thumbnail box-shadow "
+              className="thumbnail box-shadow animation "
               src="http://via.placeholder.com/640x360
 "
               alt="placeholder"
@@ -44,7 +79,7 @@ export default function Projects() {
           <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
             <h2 className="project-title neon-glow-blue">NC News API</h2>
             <img
-              className="thumbnail box-shadow"
+              className="thumbnail box-shadow animation"
               src="http://via.placeholder.com/640x360
 "
               alt="placeholder"
@@ -56,141 +91,6 @@ export default function Projects() {
           </p>
         </div>
       </div>
-      {/* carousel start!!!!!!!!! */}
-      {/* <div className="container">
-        <div
-          id="carouselExampleFade"
-          className="carousel slide carousel-slide   "
-          data-bs-theme="dark"
-        >
-          <div className="carousel-inner">
-            <div
-              className="carousel-item active  "
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-            >
-              <img
-                src="./src/assets/snacktrack-resized.jpg"
-                className="d-block mx-auto w-100 opacity-25 image-fluid border border-dark"
-                alt="..."
-              ></img>
-              <div className="carousel-caption d-none d-md-block pe-none">
-                <h5 className="display-1 ">SnackTrack</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            
-            <div
-              className="modal fade"
-              id="staticBackdrop"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              // tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div className="modal-dialog modal-dialog-centered">
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h1
-                      className="modal-title fs-5 text-light"
-                      id="staticBackdropLabel"
-                    >
-                      SnackTrack
-                    </h1>
-
-                    <button
-                      type="button"
-                      className="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div className="modal-body">
-                    <p className="text-light px-3">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Neque, atque recusandae! Cumque, assumenda accusamus,
-                      delectus ratione ex ut exercitationem, architecto sequi
-                      similique nobis quos excepturi deserunt accusantium
-                      quaerat earum? Perferendis?
-                    </p>
-                  </div>
-                  <div className="modal-footer">
-                    <a href="https://snacktrack.vercel.app/" target="_blank">
-                      <button type="button" className="btn btn-info text-dark">
-                        To SnackTrack
-                      </button>
-                    </a>
-                    <a
-                      href="https://github.com/danny-817/snacktrack"
-                      target="_blank"
-                    >
-                      <button type="button" className="btn btn-info text-dark">
-                        GitHub repo
-                      </button>
-                    </a>
-
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                
-                src="./src/assets/snacktrack-resized.jpg"
-                className="d-block mx-auto w-100 opacity-25 image-fluid border border-dark"
-                alt="..."
-              ></img>
-              <div className="carousel-caption d-none d-md-block">
-                <h5 className="display-1">NCws</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-            <div className="carousel-item ">
-              <img
-                src="src/assets/ncnews-api-resized.jpg"
-                className="d-block w-100 opacity-25 image-fluid border border-dark"
-                alt="..."
-              ></img>
-              <div className="carousel-caption d-none d-md-block">
-                <h5 className="display-1">NCews API</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleFade"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div> */}
     </div>
   );
 }
