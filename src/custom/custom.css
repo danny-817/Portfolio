@@ -49,6 +49,7 @@ body {
   padding: 10px;
 }
 .neon-glow-blue {
+  color: #000000;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(0, 234, 255), 0 0 82px rgb(0, 234, 255),
     0 0 92px rgb(0, 234, 255), 0 0 102px rgb(0, 234, 255),
@@ -379,17 +380,6 @@ body {
     margin: 0 5px 0;
   }
 }
-/* .scroll-snap-parent {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-} */
-/* .scroll-snap-child {
-  scroll-snap-align: start;
-} */
-/* html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-} */
 
 @keyframes wipe-enter {
   0% {
@@ -455,10 +445,7 @@ body {
     /* text-shadow: none; */
   }
 }
-/* The Modal (background) */
 .modal {
-  /* visibility: hidden; */
-
   font-family: Oxanium, san;
   display: block; /* Hidden by default */
   position: absolute; /* Stay in place */
@@ -466,10 +453,10 @@ body {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 200vh; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   /* background-color: rgb(0, 0, 0); */
-  /* background-color: rgba(0, 0, 0, 0.4);  */
+  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 /* Modal Content/Box */
@@ -487,6 +474,10 @@ body {
   padding: 20px;
   border: 1px solid rgb(0, 219, 219);
   width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-content > h1 {
+  font-size: 3em;
+  color: #000000;
 }
 
 /* The Close Button */

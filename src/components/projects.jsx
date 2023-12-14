@@ -23,7 +23,6 @@ export default function Projects() {
     // const updatedModals = [...modals];
     updatedModals.forEach((modal) => {
       modal = false;
-      console.log(modal, "each");
     });
     updatedModals[index] = true;
     setIsModalOpen(updatedModals);
@@ -49,7 +48,30 @@ export default function Projects() {
           {modals[0] && (
             <div className="modal">
               <div className="modal-content">
-                <button onClick={closeModal(0)}>Close Modal and Return</button>
+                <h1 className="neon-glow-blue">SnackTrack</h1>
+                <h2>"A community of food right on your doorstep"</h2>
+                <p>
+                  This app was the culmination of my time on the NorthCoders
+                  bootcamp. It was designed and created collaboratively with a
+                  team of 4 other graduates.The idea behind our app is that it
+                  helps non permanent businesses (i.e food trucks and popup
+                  stalls) advertise their locations and goods by allowing them
+                  to provide their locations and menus to customers via the map.
+                </p>
+                <ul>
+                  <li>
+                    <a
+                      href={
+                        "https://northcoders.com/projects/sep-2023/snacktrack"
+                      }
+                      target="_blank"
+                    >
+                      NortCoders project page
+                    </a>
+                  </li>
+                  <li>Link 2</li>
+                </ul>
+                <p onClick={closeModal(0)}>Close Modal and Return</p>
               </div>
             </div>
           )}
@@ -77,6 +99,17 @@ export default function Projects() {
           {modals[1] && (
             <div className="modal">
               <div className="modal-content">
+                <h1 className="neon-glow-blue">NC News</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reprehenderit consequuntur non quibusdam quasi expedita facere
+                  omnis amet quia, exercitationem quo rerum, porro possimus.
+                  Soluta quia iste impedit quod id cupiditate!
+                </p>
+                <ul>
+                  <li>Link 1</li>
+                  <li>Link 2</li>
+                </ul>
                 <button onClick={closeModal(1)}>Close Modal and Return</button>
               </div>
             </div>
@@ -102,6 +135,17 @@ export default function Projects() {
           {modals[2] && (
             <div className="modal">
               <div className="modal-content">
+                <h1 className="neon-glow-blue">NC News API</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reprehenderit consequuntur non quibusdam quasi expedita facere
+                  omnis amet quia, exercitationem quo rerum, porro possimus.
+                  Soluta quia iste impedit quod id cupiditate!
+                </p>
+                <ul>
+                  <li>Link 1</li>
+                  <li>Link 2</li>
+                </ul>
                 <button onClick={closeModal(2)}>Close Modal and Return</button>
               </div>
             </div>
