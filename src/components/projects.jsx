@@ -7,15 +7,34 @@ export default function Projects() {
   const [ref1, inView1] = useInView(options);
   const [ref2, inView2] = useInView(options);
   const [ref3, inView3] = useInView(options);
+  const [modals, setIsModalOpen] = useState([false, false, false]);
 
-  console.log(inView1, inView2, inView3);
+  const closeModal = (index) => () => {
+    const updatedModals = [...modals];
+    updatedModals[index] = false;
+    setIsModalOpen(updatedModals);
+
+    // e.target.parentNode.parentNode.style.visibility = "hidden";
+    // console.log(e.target.parentNode.parentNode.style.visibility);
+  };
+  const openModal = (index) => () => {
+    const updatedModals = modals.map((_, i) => (i === index ? true : false));
+
+    // const updatedModals = [...modals];
+    updatedModals.forEach((modal) => {
+      modal = false;
+      console.log(modal, "each");
+    });
+    updatedModals[index] = true;
+    setIsModalOpen(updatedModals);
+  };
 
   return (
     <div className=" ">
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
         <div className="project animation-container">
-          <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
+          <a onClick={openModal(0)}>
             <h2 className="project-title neon-glow-blue" ref={ref1}>
               SnackTrack
             </h2>
@@ -26,8 +45,14 @@ export default function Projects() {
               src="src/assets/snacktrack.png"
               alt="placeholder"
             />
-          </Link>
-
+          </a>
+          {modals[0] && (
+            <div className="modal">
+              <div className="modal-content">
+                <button onClick={closeModal(0)}>Close Modal and Return</button>
+              </div>
+            </div>
+          )}
           <p>
             GitHub:
             <a href="https://github.com/danny-817/snacktrack">
@@ -35,8 +60,8 @@ export default function Projects() {
             </a>
           </p>
         </div>
-        <div className="project">
-          <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
+        <div className="project animation-container">
+          <a onClick={openModal(1)}>
             <h2 ref={ref2} className="project-title neon-glow-blue ">
               NC News
             </h2>
@@ -47,15 +72,22 @@ export default function Projects() {
 "
               alt="placeholder"
             />
-          </Link>
-          <div className="modal"></div>
+          </a>
+
+          {modals[1] && (
+            <div className="modal">
+              <div className="modal-content">
+                <button onClick={closeModal(1)}>Close Modal and Return</button>
+              </div>
+            </div>
+          )}
 
           <p>
             GitHub:<a href="">Insert Link Here!</a>
           </p>
         </div>
-        <div className="project">
-          <Link to="https://www.cssscript.com/demo/cyberpunk-2077/#section-banners">
+        <div className="project animation-container">
+          <a onClick={openModal(2)}>
             <h2 ref={ref3} className="project-title neon-glow-blue">
               NC News API
             </h2>
@@ -66,7 +98,14 @@ export default function Projects() {
 "
               alt="placeholder"
             />
-          </Link>
+          </a>
+          {modals[2] && (
+            <div className="modal">
+              <div className="modal-content">
+                <button onClick={closeModal(2)}>Close Modal and Return</button>
+              </div>
+            </div>
+          )}
 
           <p>
             GitHub:<a href="">Insert Link Here!</a>
