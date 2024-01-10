@@ -13,9 +13,6 @@ export default function Projects() {
     const updatedModals = [...modals];
     updatedModals[index] = false;
     setIsModalOpen(updatedModals);
-
-    // e.target.parentNode.parentNode.style.visibility = "hidden";
-    // console.log(e.target.parentNode.parentNode.style.visibility);
   };
   const openModal = (index) => () => {
     const updatedModals = modals.map((_, i) => (i === index ? true : false));
@@ -50,6 +47,7 @@ export default function Projects() {
               <div className="modal-content">
                 <h1 className="neon-glow-blue">SnackTrack</h1>
                 <h2>"A community of food right on your doorstep"</h2>
+                <br />
                 <p>
                   This app was the culmination of my time on the NorthCoders
                   bootcamp. It was designed and created collaboratively with a
@@ -58,7 +56,7 @@ export default function Projects() {
                   stalls) advertise their locations and goods by allowing them
                   to provide their locations and menus to customers via the map.
                 </p>
-                <ul>
+                <ul className="modal-list">
                   <li>
                     <a
                       href={
@@ -71,7 +69,12 @@ export default function Projects() {
                   </li>
                   <li>Link 2</li>
                 </ul>
-                <p onClick={closeModal(0)}>Close Modal and Return</p>
+                <p
+                  onClick={closeModal(0)}
+                  className="modal-close neon-glow-blue"
+                >
+                  Return
+                </p>
               </div>
             </div>
           )}
@@ -106,11 +109,11 @@ export default function Projects() {
                   omnis amet quia, exercitationem quo rerum, porro possimus.
                   Soluta quia iste impedit quod id cupiditate!
                 </p>
-                <ul>
+                <ul className="modal-list">
                   <li>Link 1</li>
                   <li>Link 2</li>
                 </ul>
-                <button onClick={closeModal(1)}>Close Modal and Return</button>
+                <p onClick={closeModal(1)}>Close Modal and Return</p>
               </div>
             </div>
           )}
@@ -142,11 +145,11 @@ export default function Projects() {
                   omnis amet quia, exercitationem quo rerum, porro possimus.
                   Soluta quia iste impedit quod id cupiditate!
                 </p>
-                <ul>
+                <ul className="modal-list">
                   <li>Link 1</li>
                   <li>Link 2</li>
                 </ul>
-                <button onClick={closeModal(2)}>Close Modal and Return</button>
+                <p onClick={closeModal(2)}>Close Modal and Return</p>
               </div>
             </div>
           )}
