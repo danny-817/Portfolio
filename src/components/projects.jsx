@@ -26,7 +26,7 @@ export default function Projects() {
   };
 
   return (
-    <div className=" ">
+    <div className=" " id="projects">
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
         <div className="project animation-container">
@@ -67,7 +67,11 @@ export default function Projects() {
                       NortCoders project page
                     </a>
                   </li>
-                  <li>Link 2</li>
+                  <li>
+                    <a href="https://github.com/danny-817/snacktrack">
+                      GitHub Repo
+                    </a>
+                  </li>
                 </ul>
                 <p
                   onClick={closeModal(0)}
@@ -78,12 +82,6 @@ export default function Projects() {
               </div>
             </div>
           )}
-          <p>
-            GitHub:
-            <a href="https://github.com/danny-817/snacktrack">
-              Insert Link Here!
-            </a>
-          </p>
         </div>
         <div className="project animation-container">
           <a onClick={openModal(1)}>
@@ -113,14 +111,15 @@ export default function Projects() {
                   <li>Link 1</li>
                   <li>Link 2</li>
                 </ul>
-                <p onClick={closeModal(1)}>Close Modal and Return</p>
+                <p
+                  onClick={closeModal(1)}
+                  className="modal-close neon-glow-blue"
+                >
+                  Close
+                </p>
               </div>
             </div>
           )}
-
-          <p>
-            GitHub:<a href="">Insert Link Here!</a>
-          </p>
         </div>
         <div className="project animation-container">
           <a onClick={openModal(2)}>
@@ -149,14 +148,15 @@ export default function Projects() {
                   <li>Link 1</li>
                   <li>Link 2</li>
                 </ul>
-                <p onClick={closeModal(2)}>Close Modal and Return</p>
+                <p
+                  onClick={closeModal(2)}
+                  className="modal-close neon-glow-blue"
+                >
+                  Close{" "}
+                </p>
               </div>
             </div>
           )}
-
-          <p>
-            GitHub:<a href="">Insert Link Here!</a>
-          </p>
         </div>
       </div>
     </div>
