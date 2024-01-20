@@ -31,7 +31,13 @@ body {
     rgb(0, 109, 109) 100%
   );
 }
-
+.modal-list {
+  margin: 2em;
+  list-style-type: none;
+}
+.modal-list > li {
+  margin: 1em;
+}
 .teal-yellow-teal {
   background: local;
   background-image: linear-gradient(
@@ -40,6 +46,13 @@ body {
     rgba(255, 255, 0, 0.207) 20% 80%,
     teal 90%
   );
+}
+a:link {
+  text-decoration: none;
+  /* color: #00e7ef; */
+}
+a:visited {
+  /* color: #00e7ef; */
 }
 .neon-glow-pink {
   text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
@@ -453,7 +466,7 @@ body {
   left: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 200vh; /* Full height */
+  height: fit-content; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   /* background-color: rgb(0, 0, 0); */
   /* background-color: rgba(0, 0, 0, 0.4); */
@@ -481,16 +494,13 @@ body {
 }
 
 /* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+.modal-close {
+  color: #000000;
+  cursor: pointer;
+  font-size: 2em;
 }
 
 .close:hover,
 .close:focus {
   color: black;
-  text-decoration: none;
-  cursor: pointer;
 }

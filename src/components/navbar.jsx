@@ -10,13 +10,19 @@ export default function Navbar() {
       </a> */}
       <div className="button " tabIndex="1">
         {/* <button className="button">Test</button> */}
-        <p className="neon-glow-blue button-text ">Top</p>
+        <a className="neon-glow-blue button-text " href="#about">
+          Top
+        </a>
       </div>
       <div className="button" tabIndex="1">
-        <p className="neon-glow-blue button-text ">Projects</p>
+        <a className="neon-glow-blue button-text" href="#projects">
+          Projects
+        </a>
       </div>
       <div className="button" tabIndex="1">
-        <p className="neon-glow-blue button-text ">CV</p>
+        <a className="neon-glow-blue button-text " href="#contact">
+          Contact
+        </a>
       </div>
     </div>
   );

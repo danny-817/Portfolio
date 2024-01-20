@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Navbar from "./components/navbar";
+// import Contact from "./components/contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,9 @@ function App() {
           <div className="projects-page lines " id="projects">
             <Projects />
           </div>
+          {/* <div id="contact">
+            <Contact />
+          </div> */}
         </main>
       </div>
     </div>
