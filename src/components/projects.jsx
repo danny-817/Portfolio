@@ -58,17 +58,17 @@ export default function Projects() {
                 </p>
                 <ul className="modal-list">
                   <li>
-                    <a
-                      href={
-                        "https://northcoders.com/projects/sep-2023/snacktrack"
-                      }
+                    <a className="modal-link"
+                      href=
+                        "https://northcoders.com/projects/sep-2023/snacktrack"                      
                       target="_blank"
                     >
-                      NortCoders project page
+                      NorthCoders project page
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/danny-817/snacktrack">
+                    <a className="modal-link" href="https://github.com/danny-817/snacktrack" target="_blank"
+>
                       GitHub Repo
                     </a>
                   </li>
@@ -102,14 +102,16 @@ export default function Projects() {
               <div className="modal-content">
                 <h1 className="neon-glow-blue">NC News</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit consequuntur non quibusdam quasi expedita facere
-                  omnis amet quia, exercitationem quo rerum, porro possimus.
-                  Soluta quia iste impedit quod id cupiditate!
+                  NC News was the result of the frontend solo project I did on the Northcoders bootcamp and was designed to work with the corresponding backend API I built. It's a simple news article site that can display the articles according to the limited subjects we had access to as well as allow users to login, make comments on articles and give them a "thumbs up" vote and if the user had already voted for the article it would allow them to remove the vote. It was built using Javascript, React, React Router and Axios.
+                  <br />
+                  <br />
+                  The site currently isn't hosted but I plan to revisit this project in the future and host it.
                 </p>
                 <ul className="modal-list">
-                  <li>Link 1</li>
-                  <li>Link 2</li>
+                  {/* <li>
+                    <a className="modal-link" href="" target="_blank">Link 1</a></li> */}
+                  <li>
+                    <a className="modal-link" href="https://github.com/danny-817/nc-news/tree/main" target="_blank">Github Repo</a></li>
                 </ul>
                 <p
                   onClick={closeModal(1)}
@@ -145,8 +147,10 @@ export default function Projects() {
                   Soluta quia iste impedit quod id cupiditate!
                 </p>
                 <ul className="modal-list">
-                  <li>Link 1</li>
-                  <li>Link 2</li>
+                <li>
+                    <a className="modal-link" href="" target="_blank">Link 1</a></li>
+                  <li>
+                    <a className="modal-link" href="" target="_blank">Link 2</a></li>
                 </ul>
                 <p
                   onClick={closeModal(2)}
