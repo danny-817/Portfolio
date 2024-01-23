@@ -38,6 +38,10 @@ body {
 .modal-list > li {
   margin: 1em;
 }
+.modal-link{
+  text-decoration: none;
+  color: #00e7ef;
+}
 .teal-yellow-teal {
   background: local;
   background-image: linear-gradient(
@@ -47,13 +51,13 @@ body {
     teal 90%
   );
 }
-a:link {
+/* a:link {
   text-decoration: none;
-  /* color: #00e7ef; */
+  color: #00e7ef;
 }
 a:visited {
-  /* color: #00e7ef; */
-}
+  color: #00e7ef;
+} */
 .neon-glow-pink {
   text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),

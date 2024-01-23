@@ -58,17 +58,17 @@ export default function Projects() {
                 </p>
                 <ul className="modal-list">
                   <li>
-                    <a
-                      href={
-                        "https://northcoders.com/projects/sep-2023/snacktrack"
-                      }
+                    <a className="modal-link"
+                      href=
+                        "https://northcoders.com/projects/sep-2023/snacktrack"                      
                       target="_blank"
                     >
-                      NortCoders project page
+                      NorthCoders project page
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/danny-817/snacktrack">
+                    <a className="modal-link" href="https://github.com/danny-817/snacktrack" target="_blank"
+>
                       GitHub Repo
                     </a>
                   </li>
@@ -108,8 +108,10 @@ export default function Projects() {
                   Soluta quia iste impedit quod id cupiditate!
                 </p>
                 <ul className="modal-list">
-                  <li>Link 1</li>
-                  <li>Link 2</li>
+                  <li>
+                    <a className="modal-link" href="" target="_blank">Link 1</a></li>
+                  <li>
+                    <a className="modal-link" href="https://github.com/danny-817/nc-news/tree/main" target="_blank">Github Repo</a></li>
                 </ul>
                 <p
                   onClick={closeModal(1)}
@@ -145,8 +147,10 @@ export default function Projects() {
                   Soluta quia iste impedit quod id cupiditate!
                 </p>
                 <ul className="modal-list">
-                  <li>Link 1</li>
-                  <li>Link 2</li>
+                <li>
+                    <a className="modal-link" href="" target="_blank">Link 1</a></li>
+                  <li>
+                    <a className="modal-link" href="" target="_blank">Link 2</a></li>
                 </ul>
                 <p
                   onClick={closeModal(2)}
