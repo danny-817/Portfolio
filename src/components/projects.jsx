@@ -131,8 +131,7 @@ export default function Projects() {
             <img
               className={`thumbnail box-shadow
             ${inView3 ? `animated-image-on` : `animated-image-off`} `}
-              src="http://via.placeholder.com/640x360
-"
+              src="src/assets/nc-news API thumbnail.png "
               alt="placeholder"
             />
           </a>
@@ -141,16 +140,13 @@ export default function Projects() {
               <div className="modal-content">
                 <h1 className="neon-glow-blue">NC News API</h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Reprehenderit consequuntur non quibusdam quasi expedita facere
-                  omnis amet quia, exercitationem quo rerum, porro possimus.
-                  Soluta quia iste impedit quod id cupiditate!
+                  This was the first solo project I completed on the bootcamp. It's an API to be used by the associated frontend site. Going to the site, you will be presented with the available endpoints however depending on your browser setting this may appear as JSON format or as a large block of text. This was built using Javascript and Express and fully followed TDD (test driven development) utilising Jest, Jest Extended and Supertest.
                 </p>
                 <ul className="modal-list">
                 <li>
-                    <a className="modal-link" href="" target="_blank">Link 1</a></li>
+                    <a className="modal-link" href="https://nc-news-api-88m2.onrender.com/api/" target="_blank">Hosted API</a></li>
                   <li>
-                    <a className="modal-link" href="" target="_blank">Link 2</a></li>
+                    <a className="modal-link" href="https://github.com/danny-817/nc-news-api" target="_blank">Github Repo</a></li>
                 </ul>
                 <p
                   onClick={closeModal(2)}
