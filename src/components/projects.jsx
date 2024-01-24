@@ -91,8 +91,7 @@ export default function Projects() {
             <img
               className={`thumbnail box-shadow
             ${inView2 ? `animated-image-on` : `animated-image-off`} `}
-              src="http://via.placeholder.com/640x360
-"
+              src="src/assets/nc-news thumbnail.png"
               alt="placeholder"
             />
           </a>
@@ -102,7 +101,7 @@ export default function Projects() {
               <div className="modal-content">
                 <h1 className="neon-glow-blue">NC News</h1>
                 <p>
-                  NC News was the result of the frontend solo project I did on the Northcoders bootcamp and was designed to work with the corresponding backend API I built. It's a simple news article site that can display the articles according to the limited subjects we had access to as well as allow users to login, make comments on articles and give them a "thumbs up" vote and if the user had already voted for the article it would allow them to remove the vote. It was built using Javascript, React, React Router and Axios.
+                  NC News was the result of the frontend solo project I did on the Northcoders bootcamp and was designed to work with the corresponding backend API I built. It's a simple news article site that can display the articles according to the limited subjects we had access to as well as allow users to log in, make comments on articles and give them a "thumbs up" vote and if the user had already voted for the article it would allow them to remove the vote. It was built using Javascript, React, React Router and Axios.
                   <br />
                   <br />
                   The site currently isn't hosted but I plan to revisit this project in the future and host it.
@@ -140,7 +139,7 @@ export default function Projects() {
               <div className="modal-content">
                 <h1 className="neon-glow-blue">NC News API</h1>
                 <p>
-                  This was the first solo project I completed on the bootcamp. It's an API to be used by the associated frontend site. Going to the site, you will be presented with the available endpoints however depending on your browser setting this may appear as JSON format or as a large block of text. This was built using Javascript and Express and fully followed TDD (test driven development) utilising Jest, Jest Extended and Supertest.
+                  This was the first solo project I completed on the bootcamp. It's an API to be used by the associated frontend site. Going to the site, you will be presented with the available endpoints, however, depending on your browser setting, this may appear as JSON format or as a large block of text. This was built using Javascript and Express and fully followed TDD (test driven development) practices utilising Jest, Jest Extended and Supertest.
                 </p>
                 <ul className="modal-list">
                 <li>
