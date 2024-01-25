@@ -17,7 +17,6 @@ export default function Projects() {
   const openModal = (index) => () => {
     const updatedModals = modals.map((_, i) => (i === index ? true : false));
 
-    // const updatedModals = [...modals];
     updatedModals.forEach((modal) => {
       modal = false;
     });
@@ -107,8 +106,7 @@ export default function Projects() {
                   The site currently isn't hosted but I plan to revisit this project in the future and host it.
                 </p>
                 <ul className="modal-list">
-                  {/* <li>
-                    <a className="modal-link" href="" target="_blank">Link 1</a></li> */}
+                  
                   <li>
                     <a className="modal-link" href="https://github.com/danny-817/nc-news/tree/main" target="_blank">Github Repo</a></li>
                 </ul>

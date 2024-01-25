@@ -51,13 +51,7 @@ body {
     teal 90%
   );
 }
-/* a:link {
-  text-decoration: none;
-  color: #00e7ef;
-}
-a:visited {
-  color: #00e7ef;
-} */
+
 .neon-glow-pink {
   text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
@@ -78,64 +72,10 @@ a:visited {
   border-style: solid;
 }
 
-/* .landing-page {
-  background-image: linear-gradient(
-    to right,
 
-    rgb(0, 109, 109) 0%,
-
-    rgb(37, 37, 37) 15% 85%,
-    rgb(0, 109, 109) 100%
-  );
-
-  height: 100vh;
-  width: 100vw;
-
-  font-family: "Oxanium", Courier, monospace;
-  align-content: center;
-  justify-content: center;
-}
-.projects-page {
-  min-height: 100vh;
-}
-.firstname-container {
-  box-sizing: border-box;
-  display: block;
-  max-width: 1300px;
-  position: relative;
-  cursor: default;
-  user-select: none;
-  height: fit-content;
-}
-.firstname {
-  box-sizing: border-box;
-  font-size: 15vw;
-  font-family: "Oxanium";
-  float: right;
-  margin: 0 50% 0 0;
-}
-.surname-container {
-  max-width: 1300px;
-  display: block;
-
-  height: fit-content;
-  position: relative;
-  cursor: default;
-  user-select: none;
-  width: 50%;
-  margin: 0 0 0 50%;
-}
-.surname {
-  box-sizing: border-box;
-  font-size: 15vw;
-  float: left;
-  font-family: "Oxanium";
-} */
 .landing-page {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
   background-image: linear-gradient(
     to right,
     rgb(0, 109, 109) 0%,
@@ -145,7 +85,7 @@ a:visited {
   height: 100vh;
   width: 100vw;
   font-family: "Oxanium", Courier, monospace;
-  background-size: 100% 100%; /* Ensure the gradient covers the entire viewport */
+  background-size: 100% 100%; 
 }
 
 .lines {
@@ -168,7 +108,6 @@ a:visited {
 
 .firstname-container {
   box-sizing: border-box;
-  /* max-width: 650px; */
   position: relative;
   cursor: default;
   user-select: none;
@@ -177,7 +116,6 @@ a:visited {
 }
 .surname-container {
   box-sizing: border-box;
-  /* max-width: 650px; */
   position: relative;
   cursor: default;
   user-select: none;
@@ -237,20 +175,14 @@ a:visited {
 }
 .project {
   color: #ffffff;
-  /* display: flex; */
   max-width: 1300px;
-  /* display: block; */
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 30px auto;
   position: relative;
 }
-.project > * {
-  /* border: greenyellow; */
-  border-style: solid;
-  margin: 0 auto;
-}
+
 .image-container {
   position: relative;
   width: 50%;
@@ -261,7 +193,6 @@ a:visited {
   width: 100%;
   max-width: 640px;
 }
-/*---------------------------------*/
 .animation-container {
   position: relative;
   overflow: visible;
@@ -269,7 +200,7 @@ a:visited {
 
 .animated-image-off {
   opacity: 0;
-  transform: scaleX(0) scaleY(0); /* Set initial scale for horizontal and vertical */
+  transform: scaleX(0) scaleY(0); 
   transform-origin: 50% 50%;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   animation: shrinkHorizontally 0.5s ease-in-out forwards;
@@ -278,7 +209,7 @@ a:visited {
 
 .animated-image-on {
   opacity: 0.7;
-  transform: scaleX(1) scaleY(0.01); /* Horizontal expansion to 5px in height */
+  transform: scaleX(1) scaleY(0.01); 
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   animation: expandVertically 0.5s ease-in-out 0.5s forwards;
 }
@@ -302,7 +233,6 @@ a:visited {
     transform: scaleX(0) scaleY(0.01);
   }
 }
-/*---------------------------------*/
 
 .box-shadow {
   width: 100%;
@@ -341,7 +271,6 @@ a:visited {
   display: flex;
   width: 100%;
   height: 2em;
-  /* padding: 1.5em; */
   margin: 0.2em 0;
   font-size: 2em;
   font-weight: 1000;
@@ -377,7 +306,7 @@ a:visited {
   .firstname-container,
   .surname-container {
     text-align: center;
-    margin: 0; /* Remove margins on narrow screens */
+    margin: 0; 
   }
   .navbar {
     margin: 0;
@@ -409,13 +338,13 @@ a:visited {
     transform: scale(1, 0.025);
   }
 }
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .project-enter {
     animation-name: wipe-enter;
     animation-duration: 2s;
     animation-iteration-count: 1;
   }
-}
+} */
 .cyber-glitch-2 {
   animation: cyber-glitch-2 4s linear infinite;
 }
@@ -424,59 +353,48 @@ a:visited {
   0% {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
-    /* text-shadow: none; */
   }
   2% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(0);
-    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   4% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(-1rem);
-    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   6% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(1rem);
-    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   8% {
     clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%);
     transform: translateX(0);
-    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   12% {
     clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%);
     transform: translateX(0);
-    /* text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px; */
   }
   14% {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
-    /* text-shadow: none; */
   }
   100% {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
-    /* text-shadow: none; */
   }
 }
 .modal {
   font-family: Oxanium, san;
-  display: block; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  display: block; 
+  position: absolute; 
+  z-index: 2; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: fit-content; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  /* background-color: rgb(0, 0, 0); */
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  width: 100%; 
+  height: fit-content; 
+  overflow: auto; 
 }
 
-/* Modal Content/Box */
 .modal-content {
   display: block;
   background-image: linear-gradient(
@@ -490,14 +408,13 @@ a:visited {
   margin: auto;
   padding: 20px;
   border: 1px solid rgb(0, 219, 219);
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
 }
 .modal-content > h1 {
   font-size: 3em;
   color: #000000;
 }
 
-/* The Close Button */
 .modal-close {
   color: #000000;
   cursor: pointer;

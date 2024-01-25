@@ -11,7 +11,7 @@ export default function About() {
         Hi, I'm Dan, thanks for taking a look at my portfolio <br></br>
         <br></br>I'm a junior full stack developer, having recently completed an
         intensive full-time 13 week coding bootcamp, now looking to start a
-        productive career in tech
+        productive and exciting career in tech
       </p>
     </div>
   );
