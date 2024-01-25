@@ -338,13 +338,13 @@ body {
     transform: scale(1, 0.025);
   }
 }
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .project-enter {
     animation-name: wipe-enter;
     animation-duration: 2s;
     animation-iteration-count: 1;
   }
-}
+} */
 .cyber-glitch-2 {
   animation: cyber-glitch-2 4s linear infinite;
 }

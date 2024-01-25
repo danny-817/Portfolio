@@ -21,7 +21,7 @@ function App() {
           <div className="projects-page lines " id="projects">
             <Projects />
           </div>
-          <div id="contact">
+          <div id="contact" className="lines">
             <Contact />
           </div>
         </main>
