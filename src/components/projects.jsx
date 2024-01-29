@@ -141,7 +141,7 @@ export default function Projects() {
                 </p>
                 <ul className="modal-list">
                 <li>
-                    <a className="modal-link" href="https://nc-news-api-88m2.onrender.com/api/" target="_blank">Hosted API</a></li>
+                    <a className="modal-link" href="https://nc-news-api-88m2.onrender.com/api/" target="_blank">Hosted API (may take some time if not loaded recently)</a></li>
                   <li>
                     <a className="modal-link" href="https://github.com/danny-817/nc-news-api" target="_blank">Github Repo</a></li>
                 </ul>
