@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import SnackTrackModal from "./snacktrack_modal";
+import NcNewsModal from "./ncnews_modal";
+import NcNewsApiModal from "./ncnewsapi_modal";
 
 
 export default function Projects() {
@@ -31,7 +34,8 @@ export default function Projects() {
     <div className=" " id="projects">
       <h1 className="title neon-glow-blue">Projects</h1>
       <div className="projects-container ">
-        <div className="project animation-container">
+        <SnackTrackModal closeModal={closeModal} openModal={openModal} ref1={ref1} inView1={inView1} modals={modals} setIsModalOpen={setIsModalOpen}   />
+        {/* <div className="project animation-container">
           <a onClick={openModal(0)}>
             <h2 className="project-title neon-glow-blue" ref={ref1}>
               SnackTrack
@@ -69,8 +73,7 @@ export default function Projects() {
                     </a>
                   </li>
                   <li>
-                    <a className="modal-link" href="https://github.com/danny-817/snacktrack" target="_blank"
->
+                    <a className="modal-link" href="https://github.com/danny-817/snacktrack" target="_blank">
                       GitHub Repo
                     </a>
                   </li>
@@ -81,6 +84,9 @@ export default function Projects() {
                   <img src="../src/assets/Snacktrack/JavaScript_logo_2.svg" alt="" className="icon icon-opacity logo-colour" />
                   <img src="../src/assets/Snacktrack/MongoDB_logo.svg" alt="" className="icon icon-opacity logo-colour" />
                   <img src="../src/assets/Snacktrack/Node.js_logo.svg" alt="" className="icon icon-opacity logo-colour" />
+                  <img src="../src/assets/Snacktrack/Bulma Logo Black.svg" alt="" className="icon icon-opacity logo-colour" />
+                  <img src="../src/assets/Snacktrack/expressjs-ar21.svg" alt="" className="icon icon-opacity logo-colour" />
+                  <img src="../src/assets/Snacktrack/jest.svg" alt="" className="icon icon-opacity logo-colour" />
 
 
                 </div>
@@ -93,8 +99,9 @@ export default function Projects() {
               </div>
             </div>
           )}
-        </div>
-        <div className="project animation-container">
+        </div> */}
+        <NcNewsModal   closeModal={closeModal} openModal={openModal} ref2={ref2} inView2={inView2} modals={modals} setIsModalOpen={setIsModalOpen}  />
+        {/* <div className="project animation-container">
           <a onClick={openModal(1)}>
             <h2 ref={ref2} className="project-title neon-glow-blue ">
               NC News
@@ -131,8 +138,9 @@ export default function Projects() {
               </div>
             </div>
           )}
-        </div>
-        <div className="project animation-container">
+        </div> */}
+        <NcNewsApiModal closeModal={closeModal} openModal={openModal} ref3={ref3} inView3={inView3} modals={modals} setIsModalOpen={setIsModalOpen} />
+        {/* <div className="project animation-container">
           <a onClick={openModal(2)}>
             <h2 ref={ref3} className="project-title neon-glow-blue">
               NC News API
@@ -166,7 +174,7 @@ export default function Projects() {
               </div>
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </div>
   );

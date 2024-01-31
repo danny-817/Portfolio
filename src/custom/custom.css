@@ -443,6 +443,7 @@ body {
   flex-direction: row ;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 2em ;
 }
 
 .icon{
@@ -454,8 +455,7 @@ height: 5em;
 }
  
 .logo-colour{
-  /* filter: invert(1); */
-  /* filter: grayscale(1); */
+  
   filter: grayscale(1) invert(78%) sepia(51%) saturate(4613%) hue-rotate(153deg) brightness(145%) contrast(101%)
 }
 
