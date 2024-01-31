@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
+
 export default function Projects() {
   const options = { rootMargin: "0px 0px -200px 0px " };
   const [ref1, inView1] = useInView(options);
@@ -23,6 +24,8 @@ export default function Projects() {
     updatedModals[index] = true;
     setIsModalOpen(updatedModals);
   };
+
+  
 
   return (
     <div className=" " id="projects">
@@ -73,9 +76,13 @@ export default function Projects() {
                   </li>
                 </ul>
                 <div className="logo-box">
-                  <img src="../src/assets/icons8-html.svg" alt="" className="icon icon-opacity"/>            
-                  <img src="../src/assets/nextjs-original-wordmark.svg" className="icon icon-opacity white" />
-        
+                  <img src="../src/assets/Snacktrack/icons8-html.svg" alt="html logo" className="icon icon-opacity logo-colour"/>            
+                  <img src="../src/assets/Snacktrack/nextjs-original-wordmark.svg" alt="Next js logo" className="icon icon-opacity logo-colour " />
+                  <img src="../src/assets/Snacktrack/JavaScript_logo_2.svg" alt="" className="icon icon-opacity logo-colour" />
+                  <img src="../src/assets/Snacktrack/MongoDB_logo.svg" alt="" className="icon icon-opacity logo-colour" />
+                  <img src="../src/assets/Snacktrack/Node.js_logo.svg" alt="" className="icon icon-opacity logo-colour" />
+
+
                 </div>
                 <p
                   onClick={closeModal(0)}

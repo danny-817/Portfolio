@@ -431,6 +431,7 @@ body {
   color: #000000;
   cursor: pointer;
   font-size: 2em;
+  margin-top: 1em;
 }
 
 .close:hover,
@@ -441,6 +442,7 @@ body {
   display: flex;
   flex-direction: row ;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .icon{
@@ -448,9 +450,12 @@ height: 5em;
 
 }
 .icon-opacity{
-  opacity: 0.7;
+  opacity: 0.6;
 }
  
-.white{
-  filter: invert(100);
+.logo-colour{
+  /* filter: invert(1); */
+  /* filter: grayscale(1); */
+  filter: grayscale(1) invert(78%) sepia(51%) saturate(4613%) hue-rotate(153deg) brightness(145%) contrast(101%)
 }
+
