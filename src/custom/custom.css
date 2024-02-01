@@ -76,25 +76,25 @@ body {
 }
 
 
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(
+ .landing-page {
+  /* display: flex;
+  flex-direction: column; */
+  /* background-image: linear-gradient(
     to right,
     rgb(0, 109, 109) 0%,
     rgb(37, 37, 37) 15% 85%,
     rgb(0, 109, 109) 100%
-  );
-  height: 100vh;
-  width: 100vw;
+  ); */
+  /* height: 100vh;
+  width: 100vw; */
   font-family: "Oxanium", Courier, monospace;
-  background-size: 100% 100%; 
-}
+  /* background-size: 100% 100%;  */
+} 
 
 .lines {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(
     rgba(0, 109, 109, 0.1) 5%,
     transparent 5%,
@@ -155,8 +155,9 @@ body {
   font-family: "Oxanium";
   font-size: 10vw;
   text-align: center;
+  
 }
-.landing-page > p {
+.intro {
   box-sizing: border-box;
   max-width: 1000px;
   user-select: none;
