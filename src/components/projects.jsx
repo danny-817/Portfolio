@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import SnackTrackModal from "./snacktrack_modal";
-import NcNewsModal from "./ncnews_modal";
-import NcNewsApiModal from "./ncnewsapi_modal";
+import SnackTrackModal from "./projects/snacktrack_modal";
+import NcNewsModal from "./projects/ncnews_modal";
+import NcNewsApiModal from "./projects/ncnewsapi_modal";
 
 
 export default function Projects() {

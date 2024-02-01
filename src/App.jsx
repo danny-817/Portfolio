@@ -4,10 +4,13 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Navbar from "./components/navbar";
 import Contact from "./components/contact";
+import getFileNames from "./utilties/test";
 
 function App() {
   const [count, setCount] = useState(0);
 
+  getFileNames()
+  
   return (
       <main className="lines">
           <div className="" id="navbar">
