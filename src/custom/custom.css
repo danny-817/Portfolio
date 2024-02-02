@@ -163,7 +163,7 @@ body {
   user-select: none;
   text-align: center;
   font-size: 4vw;
-  margin: auto;
+  margin: 3em auto;
   width: 60%;
 }
 
@@ -452,7 +452,7 @@ height: 5em;
 
 }
 .icon-opacity{
-  opacity: 0.6;
+  opacity: 0.8;
 }
  
 .logo-colour{
@@ -460,3 +460,14 @@ height: 5em;
   filter: grayscale(1) invert(78%) sepia(51%) saturate(4613%) hue-rotate(153deg) brightness(145%) contrast(101%)
 }
 
+.link-icon{
+  margin: 1em 50%;
+  height: 3em;
+  width: 3em;
+  filter: grayscale(0) invert(78%) sepia(51%) saturate(4613%) hue-rotate(163deg) brightness(275%) contrast(101%);
+  transition: all 0.5s;
+}
+
+.link-icon:hover{
+  scale: 1.3;
+}

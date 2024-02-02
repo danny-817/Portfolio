@@ -3,7 +3,7 @@ import { useState } from "react";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Navbar from "./components/navbar";
-import Contact from "./components/contact";
+import Bio from "./components/bio";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,8 +20,8 @@ function App() {
           <div className="projects-page  " id="projects">
             <Projects />
           </div>
-          <div className="" id="contact" >
-            <Contact />
+          <div className="" id="bio" >
+            <Bio />
           </div>
       </main>   
     
