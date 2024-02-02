@@ -1,3 +1,5 @@
+import logos from "../../assets/NC-News/logos"
+
 export default function NcNewsModal ({closeModal, openModal, ref2, inView2, modals, setIsModalOpen}){
 return (
     <div className="project animation-container">
@@ -28,12 +30,23 @@ return (
                     <a className="modal-link" href="https://github.com/danny-817/nc-news/tree/main" target="_blank">Github Repo</a></li>
                 </ul>
                 <div className="logo-box">
+                {logos.map((logo)=>{
+                  return(
+                    <img src={logo.svg} alt={logo.altText} className="icon icon-opacity logo-colour"/>
+                  )
+                })
+                
+                
+                }
+              </div>
+
+                {/* <div className="logo-box">
                     <img src="../src/assets/NC-News/html5_logo.svg" alt="html5 logo" className="icon icon-opacity logo-colour"/> 
                     <img src="../src/assets/NC-News/css3_logo.svg" alt="CSS3 logo" className="icon icon-opacity logo-colour"/>                       
                     <img src="../src/assets/NC-News/javascript_logo.svg" alt="Javascript logo" className="icon icon-opacity logo-colour" />
                     <img src="../src/assets/NC-News/node.js_logo.svg" alt="Node JS logo" className="icon icon-opacity logo-colour" />
                     <img src="../src/assets/NC-News/react_logo.svg" alt="React logo" className="icon icon-opacity logo-colour" />
-                </div>
+                </div> */}
                 <p
                   onClick={closeModal(1)}
                   className="modal-close neon-glow-blue"

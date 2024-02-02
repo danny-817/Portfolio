@@ -1,4 +1,4 @@
-import testFiles from "../../assets/Snacktrack/files"
+import logoFiles from "../../assets/Snacktrack/logos"
 
 // console.log(testFiles.htmlLogo.svg)
 
@@ -26,7 +26,7 @@ export default function SnackTrackModal ({closeModal, openModal, ref1, inView1, 
               <p>
                 This app was the culmination of my time on the NorthCoders
                 bootcamp. It was designed and created collaboratively with a
-                team of 4 other graduates.The idea behind our app is that it
+                team of 4 other graduates. The idea behind our app is that it
                 helps non permanent businesses (i.e food trucks and popup
                 stalls) advertise their locations and goods by allowing them
                 to provide their locations and menus to customers via the map.
@@ -48,8 +48,8 @@ export default function SnackTrackModal ({closeModal, openModal, ref1, inView1, 
                 </li>
               </ul>
               <div className="logo-box">
-              {testFiles.map((logo)=>{
-                console.log(logo, "<<<<<<<<")
+              {logoFiles.map((logo)=>{
+                
                 return (
                   <img src={logo.svg} alt={logo.altText} className="icon icon-opacity logo-colour" />
 

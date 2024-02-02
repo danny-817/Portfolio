@@ -1,3 +1,5 @@
+import logos from "../../assets/NC-News-API/logos"
+
 export default function NcNewsApiModal ({closeModal, openModal, ref3, inView3, modals, setIsModalOpen}){
 
 return (
@@ -27,12 +29,23 @@ return (
                     <a className="modal-link" href="https://github.com/danny-817/nc-news-api" target="_blank">Github Repo</a></li>
                 </ul>
                 <div className="logo-box">
+                {logos.map((logo)=>{
+                  return(
+                    <img src={logo.svg} alt={logo.altText} className="icon icon-opacity logo-colour" />
+                  )
+                })}
+
+
+
+
+                </div>
+                {/* <div className="logo-box">
                     <img src="../src/assets/NC-News-API/javascript_logo.svg" alt="Javascript logo" className="icon icon-opacity logo-colour" />
                     <img src="../src/assets/NC-News-API/nodejs_logo.svg" alt="Node JS logo" className="icon icon-opacity logo-colour" />
                     <img src="../src/assets/NC-News-API/expressjs_logo.svg" alt="Express JS logo" className="icon icon-opacity logo-colour" />
                     <img src="../src/assets/NC-News-API/jest_logo.svg" alt="" className="icon icon-opacity logo-colour" />
 
-                </div>
+                </div> */}
                 <p
                   onClick={closeModal(2)}
                   className="modal-close neon-glow-blue"
