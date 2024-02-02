@@ -9,10 +9,10 @@ export default [
     },
     {
         altText:"node j s logo",
-        svg:"src/assets/NC-News/node.js_logo.svg"
+        svg:"src/assets/NC-News-API/nodejs_logo.svg"
     },
     {
         altText:"javascript logo",
-        svg:"src/assets/NC-News/javascript_logo.svg"
+        svg:"src/assets/NC-News-API/javascript_logo.svg"
     }
 ]
