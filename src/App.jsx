@@ -3,30 +3,28 @@ import { useState } from "react";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Navbar from "./components/navbar";
-import Contact from "./components/contact";
+import Bio from "./components/bio";
 
 function App() {
   const [count, setCount] = useState(0);
 
+
   return (
-    <div className="">
-      <div className="">
-        <main className="">
+      <main className="lines">
           <div className="" id="navbar">
             <Navbar />
           </div>         
           <div className="" id="about" dir="ltr">
             <About />
           </div>
-          <div className="projects-page lines " id="projects">
+          <div className="projects-page  " id="projects">
             <Projects />
           </div>
-          <div className="lines" id="contact" >
-            <Contact />
+          <div className="" id="bio" >
+            <Bio />
           </div>
-        </main>
-      </div>
-    </div>
+      </main>   
+    
   );
 }
 
