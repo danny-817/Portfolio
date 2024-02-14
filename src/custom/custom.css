@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Oxanium, 'Courier New', Courier, monospace
 }
 html {
   scroll-behavior: smooth;
@@ -44,16 +45,7 @@ html {
     rgb(109, 0, 109) 100%
   );
 }
-/* body {
-  background-image: linear-gradient(
-    to right,
 
-    rgb(0, 109, 109) 0%,
-
-    rgb(37, 37, 37) 15% 85%,
-    rgb(0, 109, 109) 100%
-  );
-} */
 .modal-list {
   margin: 2em;
   list-style-type: none;
@@ -65,51 +57,42 @@ html {
   text-decoration: none;
   color: #00e7ef;
 }
-.teal-yellow-teal {
-  background: local;
-  background-image: linear-gradient(
-    to right,
-    teal 10%,
-    rgba(255, 255, 0, 0.207) 20% 80%,
-    teal 90%
-  );
-}
 
-.neon-glow-pink {
-  text-shadow: 0 0 7px #ffffff, 0 0 10px #fff, 0 0 21px #fff,
-    0 0 42px rgb(255, 0, 242), 0 0 82px rgb(255, 0, 242),
-    0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242),
-    0 0 151px rgb(255, 0, 242);
-  padding: 10px;
-}
+
+
 .neon-glow-blue {
+  color: #c2fbff;
+  text-shadow: 
+    0 0 42px rgb(0, 234, 255), 
+    0 0 92px rgb(0, 234, 255), 
+    0 0 151px rgb(0, 234, 255);
+  padding: 0;
+}
+/* .neon-glow-blue {
   color: #000000;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff,
     0 0 42px rgb(0, 234, 255), 0 0 82px rgb(0, 234, 255),
     0 0 92px rgb(0, 234, 255), 0 0 102px rgb(0, 234, 255),
     0 0 151px rgb(0, 234, 255);
   padding: 0;
-}
-.highlight {
-  border: greenyellow;
-  border-style: solid;
-}
+} */
 
 
- .landing-page {
-  /* display: flex;
-  flex-direction: column; */
-  /* background-image: linear-gradient(
+
+ /* .landing-page {
+  display: flex;
+  flex-direction: column; 
+  /background-image: linear-gradient(
     to right,
     rgb(0, 109, 109) 0%,
     rgb(37, 37, 37) 15% 85%,
     rgb(0, 109, 109) 100%
-  ); */
-  /* height: 100vh;
-  width: 100vw; */
-  font-family: "Oxanium", Courier, monospace;
-  /* background-size: 100% 100%;  */
-} 
+  ); 
+   height: 100vh;
+  width: 100vw; 
+  font-family: "Oxanium", Courier, monospace; 
+  background-size: 100% 100%; 
+}  */
 
 .lines {
   margin: 0;
@@ -150,7 +133,7 @@ html {
 .surname {
   box-sizing: border-box;
   font-size: 15vh;
-  font-family: "Oxanium";
+  /* font-family: "Oxanium"; */
 }
 
 .firstname {
@@ -172,7 +155,7 @@ html {
 }
 
 .title {
-  font-family: "Oxanium";
+  /* font-family: "Oxanium"; */
   font-size: 10vw;
   text-align: center;
   
@@ -185,6 +168,9 @@ html {
   font-size: 4vw;
   margin: 3em auto;
   width: 60%;
+  text-align: justify;
+  text-justify: inter-word
+  
 }
 
 .projects-container {
@@ -198,7 +184,7 @@ html {
   height: auto;
 }
 .project {
-  color: #ffffff;
+  color: #c2fbff;
   max-width: 1300px;
   flex-direction: column;
   align-items: center;
@@ -266,28 +252,35 @@ html {
     0 0 42px rgb(0, 109, 109), 0 0 82px rgb(0, 109, 109),
     0 0 92px rgb(0, 109, 109), 0 0 102px rgb(0, 109, 109),
     0 0 151px rgb(0, 109, 109);
+    
+    
 }
-
+.project-title:hover{
+  opacity: 1;
+  color: rgba(0, 0, 0, 0);
+}
 .project-title:hover + .thumbnail {
   opacity: 1;
+  color: black;
 }
 
 .project-title {
-  color: black;
+  color: #c2fbff;
   font-size: 3em;
-  font-family: Oxanium;
+  /* font-family: Oxanium;  */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -75%);
   z-index: 1;
   cursor: pointer;
+  transition: color 0.5s;
 }
 
-.full-page {
+/* .full-page {
   min-width: 100vh;
   min-height: 100vh;
-}
+} */
 
 .button {
   box-sizing: border-box;
@@ -299,16 +292,22 @@ html {
   margin: 0.2em 0;
   font-size: 2em;
   font-weight: 1000;
-  font-family: Oxanium;
-  color: #000000;
-  background-color: rgba(0, 128, 128, 0.662);
+  /* font-family: Oxanium; */
+  color: #c2fbff;
+  background-color: rgba(0, 128, 128);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 50%);
   transition: background-color 0.5s, transform 0.5s;
+  opacity: 0.8;
 }
 
-.button:hover {
-  background-color: #00e7ef;
-  transform: scale(1.2);
+@media (hover:hover){
+  .button:hover {
+    opacity: 1;
+    background-color: #00e7ef;
+    transform: scale(1.2);
+  }
+
+
 }
 .button:active {
   background-color: rgb(0, 0, 0);
@@ -320,15 +319,15 @@ html {
   z-index: 3;
 }
 @media (min-width: 1100px) {
-  .landing-page > p {
+  .intro {
     font-size: 3em;
-  }
+  } 
   .title {
     font-size: 5em;
   }
 }
 #navbar {
-  width: 100%;
+  width: 100vw;
 }
 @media (max-width: 1210px) {
   .firstname-container,
@@ -356,11 +355,12 @@ html {
     margin: 0 5px 0;
     box-sizing: border-box;
     width: 10em;
+    opacity:1;
 
   }
 }
 
-@keyframes wipe-enter {
+/* @keyframes wipe-enter {
   0% {
     transform: scale(1, 1);
   }
@@ -370,7 +370,7 @@ html {
   50% {
     transform: scale(1, 0.025);
   }
-}
+} */
 /* @media (prefers-reduced-motion: no-preference) {
   .project-enter {
     animation-name: wipe-enter;
@@ -378,7 +378,7 @@ html {
     animation-iteration-count: 1;
   }
 } */
-.cyber-glitch-2 {
+/* .cyber-glitch-2 {
   animation: cyber-glitch-2 4s linear infinite;
 }
 
@@ -415,9 +415,9 @@ html {
     clip-path: var(--og-clip-path);
     transform: translateX(0);
   }
-}
+} */
 .modal {
-  font-family: Oxanium, san;
+  /* font-family: Oxanium, 'Courier New', Courier, monospace; */
   display: block; 
   position: absolute; 
   z-index: 2; 
@@ -442,23 +442,28 @@ html {
   padding: 20px;
   border: 1px solid rgb(0, 219, 219);
   width: 80%; 
+  
 }
 .modal-content > h1 {
   font-size: 3em;
-  color: #000000;
+  color: #c2fbff;
+}
+.project-description{
+  text-align: justify;
+  text-justify: inter-word
 }
 
 .modal-close {
-  color: #000000;
+  color: #c2fbff;
   cursor: pointer;
   font-size: 2em;
   margin-top: 1em;
 }
 
-.close:hover,
+/* .close:hover,
 .close:focus {
   color: black;
-}
+} */
 .logo-box{
   display: flex;
   flex-direction: row ;
@@ -469,16 +474,18 @@ html {
 
 .icon{
 height: 5em;
+opacity: 0.8;
+filter: grayscale(1) invert(78%) sepia(51%) saturate(4613%) hue-rotate(153deg) brightness(145%) contrast(101%)
 
 }
-.icon-opacity{
+/* .icon-opacity{
   opacity: 0.8;
-}
+} */
  
-.logo-colour{
+/* .logo-colour{
   
   filter: grayscale(1) invert(78%) sepia(51%) saturate(4613%) hue-rotate(153deg) brightness(145%) contrast(101%)
-}
+} */
 
 .link-icon{ 
   margin: 1em 50%;
