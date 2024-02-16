@@ -39,9 +39,10 @@ html {
 
 .neon-glow-blue {
 	color: #c2fbff;
-	text-shadow: 0 0 42px rgb(0, 234, 255), 0 0 92px rgb(0, 234, 255),
-		0 0 151px rgb(0, 234, 255);
+	text-shadow: 0 0 30px rgb(0, 234, 255);
+
 	padding: 0;
+	overflow: visible;
 }
 
 .lines {
@@ -118,6 +119,7 @@ html {
 	width: 60%;
 	text-align: justify;
 	text-justify: inter-word;
+	font-display: swap;
 }
 
 .projects-container {
@@ -229,7 +231,7 @@ html {
 	margin: 0.2em 0;
 	font-size: 2em;
 	font-weight: 1000;
-	color: #c2fbff;
+	color: #ffffff;
 	background-color: rgba(0, 128, 128);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 50%);
 	transition: background-color 0.5s, transform 0.5s;
@@ -369,10 +371,10 @@ html {
 .cv {
 	text-align: center;
 	transition: 0.5s;
+	width: fit-content;
+	margin: auto;
+	overflow: visible;
 }
 .no-decoration {
 	text-decoration: none;
-}
-.cv:hover {
-	scale: 1.3;
 }
