@@ -1,39 +1,43 @@
+import htmlLogo from "./html5_logo.svg";
+import bulmaLogo from "./bulma_logo.svg";
+import expressLogo from "./expressjs_logo.svg";
+import jsLogo from "./javascript_logo.svg";
+import jestLogo from "./jest_logo.svg";
+import mongodbLogo from "./mongodb_logo.svg";
+import nextLogo from "./nextjs_logo.svg";
+import nodeLogo from "./nodejs_logo.svg";
+
 export default [
-   {
-        altText:"html logo",
-        svg:`src/assets/Snacktrack/html5_logo.svg `
-    },
-    {
-        altText:"bulma logo",
-        svg: `src/assets/Snacktrack/bulma_logo.svg`
-    },
-    {
-        altText:"express logo",
-        svg: `src/assets/Snacktrack/expressjs_logo.svg`
-    },
-    {
-        altText:"javascript logo",
-        svg: `src/assets/Snacktrack/javascript_logo.svg`
-    },
-    {
-        altText:"jest logo",
-        svg: `src/assets/Snacktrack/jest_logo.svg`
-    },
-    {
-        altText:"mongo d b logo",
-        svg: `src/assets/Snacktrack/mongodb_logo.svg`
-    },
-    {
-        altText:"next j s logo",
-        svg: `src/assets/Snacktrack/nextjs_logo.svg`
-    },
-    {
-        altText:"node j s logo",
-        svg: `src/assets/Snacktrack/nodejs_logo.svg`
-    }
-
-
-
-
-
-]
+	{
+		altText: "html logo",
+		svg: htmlLogo,
+	},
+	{
+		altText: "bulma logo",
+		svg: bulmaLogo,
+	},
+	{
+		altText: "express logo",
+		svg: expressLogo,
+	},
+	{
+		altText: "javascript logo",
+		svg: jsLogo,
+	},
+	{
+		altText: "jest logo",
+		svg: jestLogo,
+	},
+	{
+		altText: "mongo d b logo",
+		svg: mongodbLogo,
+	},
+	{
+		altText: "next j s logo",
+		svg: nextLogo,
+	},
+	{
+		altText: "node j s logo",
+		svg: nodeLogo,
+	},
+];

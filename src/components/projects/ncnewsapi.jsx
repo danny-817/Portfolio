@@ -1,4 +1,5 @@
 import logos from "../../assets/NC-News-API/logos";
+import ncnewsApi from "../../assets/nc-news API thumbnail.png";
 
 export default function NcNewsApi({
 	closeModal,
@@ -19,7 +20,7 @@ export default function NcNewsApi({
 				<img
 					className={`thumbnail box-shadow
             ${inView3 ? `animated-image-on` : `animated-image-off`} `}
-					src="src/assets/nc-news API thumbnail.png "
+					src={ncnewsApi}
 					alt="placeholder"
 				/>
 			</div>
