@@ -1,24 +1,28 @@
+import reactLogo from "./react_logo.svg";
+import cssLogo from "./css3_logo.svg";
+import nodeLogo from "./nodejs_logo.svg";
+import jsLogo from "./javascript_logo.svg";
+import htmlLogo from "./html5_logo.svg";
+
 export default [
-    {
-        altText:"react logo",
-        svg:"src/assets/NC-News/react_logo.svg"
-    },
-    {
-        altText:"css3 logo",
-        svg:"src/assets/NC-News/css3_logo.svg"
-    },
-    {
-        altText:"node j s logo",
-        svg:"src/assets/NC-News/nodejs_logo.svg"
-    },
-    {
-        altText:"javascript logo",
-        svg:"src/assets/NC-News/javascript_logo.svg"
-    },
-    {
-        altText:"html5 logo",
-        svg:"src/assets/NC-News/html5_logo.svg"
-    }
-]
-
-
+	{
+		altText: "react logo",
+		svg: reactLogo,
+	},
+	{
+		altText: "css3 logo",
+		svg: cssLogo,
+	},
+	{
+		altText: "node j s logo",
+		svg: nodeLogo,
+	},
+	{
+		altText: "javascript logo",
+		svg: jsLogo,
+	},
+	{
+		altText: "html5 logo",
+		svg: htmlLogo,
+	},
+];

@@ -1,11 +1,9 @@
+import cv from "../assets/DH_2023_CV.pdf";
+
 export default function Extras() {
 	return (
 		<div>
-			<a
-				href="src/assets/DH_2023_CV.pdf"
-				target="_blank"
-				className="no-decoration"
-			>
+			<a href={cv} target="_blank" className="no-decoration">
 				<h1 className="title cv neon-glow-blue">View my CV</h1>
 			</a>
 			<div className="extras-link-container">

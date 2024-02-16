@@ -1,6 +1,7 @@
 /** @format */
 
 import logos from "../../assets/NC-News/logos";
+import ncnews from "../../assets/nc-news thumbnail.png";
 
 export default function NcNews({
 	closeModal,
@@ -21,7 +22,7 @@ export default function NcNews({
 				<img
 					className={`thumbnail box-shadow
             ${inView2 ? `animated-image-on` : `animated-image-off`} `}
-					src="src/assets/nc-news thumbnail.png"
+					src={ncnews}
 					alt="placeholder"
 				/>
 			</div>

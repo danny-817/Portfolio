@@ -1,4 +1,5 @@
 import logoFiles from "../../assets/Snacktrack/logos";
+import snackTrack from "../../assets/snacktrack.png";
 
 export default function SnackTrack({
 	closeModal,
@@ -20,7 +21,7 @@ export default function SnackTrack({
 				<img
 					className={`thumbnail box-shadow
             ${inView1 ? `animated-image-on` : `animated-image-off`} `}
-					src="../assets/snacktrack.png"
+					src={snackTrack}
 					alt="placeholder"
 				/>
 			</div>

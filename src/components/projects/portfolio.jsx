@@ -1,4 +1,5 @@
 import logos from "../../assets/Portfolio/logos";
+import portfolio from "../../assets/portfolio thumbnail.png";
 
 export default function Portfolio({
 	closeModal,
@@ -19,7 +20,7 @@ export default function Portfolio({
 				<img
 					className={`thumbnail box-shadow
             ${inView4 ? `animated-image-on` : `animated-image-off`} `}
-					src="src/assets/portfolio thumbnail.png "
+					src={portfolio}
 					alt="placeholder"
 				/>
 			</div>
